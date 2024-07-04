@@ -1,0 +1,4 @@
+JWT
+
+pip install PyJWT
+pip install Django-cors-headers

@@ -1,0 +1,87 @@
+#######################################################SELECT_RELATED##################################################
+
+class Department(models.Model):
+	name = models.CharField(Max_length = 100)
+	
+class Employee(models.Model):
+	name = models.CharField(max_length = 50)
+	age = models.IntegerField(default = 0)
+	department = models.ForeignKey(Department,on_delete = models.CASCADE)
+	
+
+Department.objects.all().values()
+
+Department.objects.create(name = "HR")
+Department.objects.create(name = "Accounts")
+Department.objects.create(name = "Purchase")
+Department.objects.create(name = "IT")
+
+d = Department.objects.get(name = "IT")
+
+Employee.objects.create(name = "RAJ",age = 30,department = d)
+
+
+@@@@@@@Another way to create @@@@@@@@@@@@@@@
+
+ d = Department.objects.get(pk=1)
+>>> d.choice_set.all()
+<QuerySet []>
+>>> d.employee_set.create(name = "Nom",age = 24)
+
+ 
+###################### HOW to Fetch ????????????????????????????????????????
+
+employees = Employee.objects.select_related('department').all()
+
+$$$ To filter any department
+hr_employees = Employee.objects.select_related('department').filter(department__name='HR')
+
+
+for employee in employees:
+    print(employee.name,employee.age.employee.depertment.name)
+    
+-------------------------------------------------------------------------------------------------------------------------------------
+
+################################################################ PREFETCH_RELATED ####################################################
+
+it is mainly used for ManyToManyField and reverse ForeignKey relationships
+
+class Book(models.Model):
+	name = models.CharField(max_length =50)
+	
+class Store(models.Model):
+	name = models.CharField(max_length = 150)
+	books = models.ManyToManyField(Book,on_delete = models.CASCADE)
+	
+
+Book.objects.all().values()
+
+Book1 = Book.objects.create(name = "book 1")
+Book2 = Book.objects.create(name = "book 2")
+Book3 = Book.objects.create(name = "book 3")
+
+store1 = Store.objects.create(name = "rajstore")
+store1.books.add(book1,book2)
+
+store2 = Store.objects.create(name = "chenstore")
+store2.books.add(book2,book3)
+
+stores = Store.objects.prefetch_related('books').all()
+
+for store in stores:
+	print(store.name)
+	for book in store.books.all()
+	    print(book.name)
+	
+
+
+
+
+
+
+
+
+
+
+
+

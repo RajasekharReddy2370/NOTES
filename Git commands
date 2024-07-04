@@ -1,0 +1,82 @@
+
+GIT_HUB COMMANDS
+
+git init
+
+git clone 
+
+git add .
+
+git commit -m "Description on updated code"
+
+git branch
+
+git push origin main
+
+git username : "USERNAME"
+git password : TOKEN
+
+ git remote add origin https://github.com/c360-voice/aivoice.git
+ 
+  git pull origin master
+################################################################TOKEN GENERATION########################################################################
+
+1.Git profile
+2.Settings
+3.Down Developer settings
+4.Personnel Access Tokens
+5.Tokens(CLassic)
+6.Generate_New_Token
+7.Generate_New_Token(classic)
+8.note"Description"
+9.Expiration"No_expiry"
+10.click on repo boxes
+11.Generate_Token
+
+#####################################################################CREATE NEW REPO using CODE#########################################################################
+
+
+gh auth login
+gh repo create Encode_Decode --public --source=. --remote=origin
+git push -u origin main
+
+#####################################################################After creating repo in Git_HUB######################################################
+1.cd /path/to/your/project
+2.git init
+3.git add .
+
+4.git commit -m "Initial commit"
+5.git remote add origin https://github.com/yourusername/your-repository-name.git
+6.git remote add origin https://github.com/RajasekharReddy2370/Encode_Decode.git
+7.git push -u origin main
+
+
+git checkout branch_name (To change branch name)
+
+git help -a "To see all commands"
+
+git stash
+
+
+
+****************************************************DAILY ****************************************************************************
+
+[mrng 8AM] git pull origi master
+
+
+before push
+
+git stash
+git pull origin master [to get the updated code in the middle of the day]
+
+[evn 8] git push branchname
+ 
+
+
+
+
+
+
+
+
+

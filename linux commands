@@ -1,0 +1,4 @@
+
+To install pycharm after downloading
+sudo snap install pycharm-community --classic
+

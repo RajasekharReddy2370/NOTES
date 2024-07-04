@@ -1,0 +1,60 @@
+COMMANDS
+
+python3 --version
+
+python3 -m get-pip
+
+pip install --upgrade pip
+python.exe -m pip install --upgrade pip
+
+python3 -m venv myenvir
+python -m venv myenvir
+
+source myenvir/bin/activate
+myenvir/Scripts/activate
+
+pip install pandas
+pip install openpyxl
+pip install indic-transliteration
+
+pip freeze
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+pip install Django
+python3 -m Django--version
+django-admin startproject projectname
+django-admin startapp appname
+
+from django.http import Httpresponse
+from django.urls import include,path
+from django.contrib import admin
+from django.db import models
+from django.contrib.auth.models import BaseUserManager
+from django.contrib.auth.models import AbstractBaseUser,PermissionsMixin
+
+python manage.py runserver
+python manage.py makemigrations
+python manage.py sqlmigrate appname 0001
+python manage.py migrate
+python manage.py shell
+python manage.py createsuperuser
+
+from rest_framework.decorators import api_view
+from rest_framework.views import APIVIEW
+from rest_framework.response import Response
+from rest_framework.status import *
+from rest_framework.permissions import AllowAny
+from rest_framework.models.authtoken import Token
+from rest_framework.authentication import Tokenauthentication
+
+
+
+
+
+
+
+
+
+
+

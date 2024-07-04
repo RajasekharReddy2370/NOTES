@@ -1,0 +1,16 @@
+
+
+sql commands
+
+sudo systemctl status mysql
+sudo mysql
+
+alter user"username"@"localhost" identified by "password";
+show databases;
+
+#################### FOR NEW USER #######################################
+
+create user "NEWUSER"@"localhost" identified by "PASSWORD";
+
+
+
