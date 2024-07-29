@@ -1,0 +1,94 @@
+open Music folder
+then open deno_in folder
+remove all the wav files in deno_in
+then open the deno_out folder
+remove all the wav files in deno_out
+
+open the pendrive
+then copy the links from the excel
+then open the music folder open the deno_in folder
+then open the txt.file 
+remove the existing links and click cntrl save
+then paste the new links in the text file then click cntrl save
+no new line should not be there
+
+then open the terminal
+tmux new -s name
+tmux attach -r name
+cntrl+b then leave then shift+% new tmux open
+
+cd Music
+then activate the environment
+source ~/venv/ymdp/bin/activate
+activate ymdp environment
+change the Actor Name in ymdp.py file
+then run the file
+python ymdp.py {run file}
+downloads are shown in the deno_in youtube downloads original stereo folder with Actor name
+
+
+AFTER DOWNLOADING COMPLETE
+go to the file manager
+Music
+deno in
+open the folder youtube downloads original stereo
+then see the Actor name
+open the folder 
+copy the wav files
+then paste in the deno_in folder
+
+in 1st tmux
+cd Music
+source ~/venv/denoiser/bin/activate
+python -m denoiser.enhance __noisy_dir=deno_in/ __out_dir=deno_out __streaming
+
+then cntrl+b then d {FOR DETATCH}
+then windows lock
+
+AFTER DENOISING
+there are 2 files in the deno_out
+_enhanced
+_noisy
+
+_enhanced should give for clip cutting
+
+rm -rf *_noisy.wav {TO REMOVE NOISY FILES}
+
+
+
+cntrl+b then shift+% {FOR NEW TERMINAL}
+
+cntrl+b then arrows {FOR CHANGING THE TMUX TERMINALS}
+
+cntrl+l clear
+
+ssh {serverusername}@192.168.100.{portnumber}
+
+rm -rf *_noisy.wav
+
+tmux ls
+tensor
+training
+
+tmux attach -t training
+
+
+NVIDIA-smi
+
+
+
+
+
+ANOTHER PROCESS FOR DOWNLOADING
+ymdp server
+describe database
+Add Actor in the field
+pop up
+if the link is above 1 hr
+only 1 link should be give in pop up
+these are directly downloaded in the s3 bucket of AWS
+
+
+
+
+
