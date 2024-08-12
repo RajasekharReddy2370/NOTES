@@ -30,16 +30,25 @@ django-admin startapp appname
 
 from django.http import Httpresponse
 from django.urls import include,path
+from django.urls import re_path
 from django.contrib import admin
 from django.db import models
 from django.contrib.auth.models import BaseUserManager
 from django.contrib.auth.models import AbstractBaseUser,PermissionsMixin
+from django.core.asgi import get_asgi_application
+
+
+from channels.generic.websocket import WebsocketConsumer
+from channels.auth import AuthMiddlewareStack
+from channels.routing import ProtocolTypeRouter, URLRouter
+from channels.security.websocket import AllowedHostsOriginValidator
 
 python manage.py runserver
 python manage.py makemigrations
 python manage.py sqlmigrate appname 0001
 python manage.py migrate
 python manage.py shell
+python manage.py dbshell
 python manage.py createsuperuser
 
 from rest_framework.decorators import api_view
