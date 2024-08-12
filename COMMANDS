@@ -16,6 +16,8 @@ myenvir/Scripts/activate
 pip install pandas
 pip install openpyxl
 pip install indic-transliteration
+pip install channels
+pip install daphne
 
 pip freeze
 pip freeze > requirements.txt
