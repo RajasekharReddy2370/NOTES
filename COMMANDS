@@ -25,12 +25,14 @@ pip install openpyxl
 pip install indic-transliteration
 pip install channels
 pip install daphne
+pip install channels_redis
+pip install Django
+
 
 pip freeze
 pip freeze > requirements.txt
 pip install -r requirements.txt
 
-pip install Django
 python3 -m Django--version
 django-admin startproject projectname
 django-admin startapp appname
