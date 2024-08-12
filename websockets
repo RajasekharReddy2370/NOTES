@@ -1,0 +1,55 @@
+###################################### PART-1 ####################################
+
+1st step
+pip install channels
+pip install daphne
+
+mysite project name
+chat app name
+
+in settings.py installedapps add chat
+
+in chat/templates/chat/index.html
+create view index render the index template
+create url.py in chat
+make the root url to handle the request for index view
+run server
+ignore the migrations
+
+
+INTEGRATE THE Channels library
+open asgi.py  in mysite
+from channels.routing import ProtocolTypeRouter
+application = ProtocolTypeRouter(
+    {
+        "http" : get_asgi_application()
+    }
+add the daphne library to installes apps at starting position
+
+add this to seetins file in down 
+ASGI_APPLICATION = "mysite.asgi.application"
+runserver
+
+[Starting ASGI/Daphne development server at http://127.0.0.1:8000/]
+
+#################################### PART-2 ######################################
+create room template
+render and run the server
+type "any room name" and press enter
+type message "hello"
+
+ValueError: No application configured for scope type 'websocket'
+WebSocket DISCONNECT /ws/chat/lobby/ [127.0.0.1:47356]
+
+http request-project urls - app urls-app views -response
+websocket connection - routing - consumers - events [connect, disconnect, receive]
+
+create consumers(like views)
+create routing(like urls)
+create root_url in asgi.py(like urls.py in settings file) 
+
+
+
+
+
+
