@@ -46,7 +46,11 @@ websocket connection - routing - consumers - events [connect, disconnect, receiv
 
 create consumers(like views)
 create routing(like urls)
-create root_url in asgi.py(like urls.py in settings file) 
+update the asgi.py file
+
+run the migrations
+
+
 
 
 
