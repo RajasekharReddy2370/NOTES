@@ -1,11 +1,18 @@
 COMMANDS
 
+to see all the files and applications in laptop
+dpkg --list
+apt list --installed
+snap list
+
+
 python3 --version
 
 python3 -m get-pip
 
 pip install --upgrade pip
 python.exe -m pip install --upgrade pip
+pip install --upgrade pip
 
 python3 -m venv myenvir
 python -m venv myenvir
