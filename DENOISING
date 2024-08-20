@@ -7,10 +7,13 @@ remove all the wav files in deno_out
 open the pendrive
 then copy the links from the excel
 then open the music folder open the deno_in folder
-then open the txt.file 
+then open the All_video_links txt.file 
 remove the existing links and click cntrl save
 then paste the new links in the text file then click cntrl save
 no new line should not be there
+then open the archieve.txt file
+remove the links 
+then cntrl save
 
 then open the terminal
 tmux new -s name
@@ -22,6 +25,7 @@ then activate the environment
 source ~/venv/ymdp/bin/activate
 activate ymdp environment
 change the Actor Name in ymdp.py file
+cntrl + s save the changes
 then run the file
 python ymdp.py {run file}
 downloads are shown in the deno_in youtube downloads original stereo folder with Actor name
@@ -40,7 +44,7 @@ then paste in the deno_in folder
 in 1st tmux
 cd Music
 source ~/venv/denoiser/bin/activate
-python -m denoiser.enhance __noisy_dir=deno_in/ __out_dir=deno_out __streaming
+python -m denoiser.enhance --noisy_dir=deno_in/ --out_dir=deno_out --streaming
 
 then cntrl+b then d {FOR DETATCH}
 then windows lock
