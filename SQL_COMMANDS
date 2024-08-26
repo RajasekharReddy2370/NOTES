@@ -12,5 +12,19 @@ show databases;
 
 create user "NEWUSER"@"localhost" identified by "PASSWORD";
 
+######################################3 sqlite3 commands ############################
 
+
+folder la *.db
+
+sqlite3
+
+.open databsename.db
+
+.tables
+
+.mode columns
+.headers on
+PRAGMA table_info(table_name)
+select * from table_name;
 
