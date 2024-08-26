@@ -1,6 +1,23 @@
 TRAINING
+
+################### 1
  ssh c360@192.168.100.196 [198]
  yes
  password : 123
- screen -r
- tensorboard --logdir Fednavid_891-August-20-2024_06+20PM-f829bf50/
+
+
+(dl_2) server@server-Z590-AORUS-ELITE-AX:~/Work/coqui/recipes/ljspeech/LJSpeech-1.1$ ls
+
+folders appear
+
+
+################# 2
+(dl_2) server@server-Z590-AORUS-ELITE-AX:~/Work/coqui/TTS
+vim  python train_vocoder_h.py    {for editing}
+
+CUDA_VISIBLE_DEVICES=0 python train_vocoder_h.py   {for running}
+
+screen -r
+
+cntrl+A then d   for detatch
+screen -r
