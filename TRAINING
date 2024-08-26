@@ -5,12 +5,10 @@ TRAINING
  yes
  password : 123
 
-
 To activate the environment go to home/.venv/dl(dl2)...
 (dl_2) server@server-Z590-AORUS-ELITE-AX:~/Work/coqui/recipes/ljspeech/LJSpeech-1.1$ ls
 
 folders appear
-
 
 ################# 2
 (dl_2) server@server-Z590-AORUS-ELITE-AX:~/Work/coqui/TTS
