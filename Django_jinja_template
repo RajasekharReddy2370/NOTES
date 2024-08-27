@@ -35,3 +35,30 @@
     <p>This is where the main content goes.</p>
 {% endblock %}
 
+<!-- Example of a for loop in a template -->
+<ul>
+    {% for item in item_list %}
+        <li>{{ item }}</li>
+    {% empty %}
+        <li>No items available.</li>
+    {% endfor %}
+</ul>
+
+
+<!-- jinja2_templates/user_profile.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>User Profile</h2>
+    <p>Name: {{ user.name }}</p>
+    <p>Joined: {{ user.joined_date | date("F j, Y") }}</p>
+
+    <ul>
+        {% for post in user.posts %}
+            <li>{{ post.title }} - {{ post.date_posted | date("Y-m-d") }}</li>
+        {% empty %}
+            <li>No posts available.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
