@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Site{% endblock %}</title>
+    {% load static %}
+    <!-- Include CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Welcome{% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <!-- Include JavaScript file -->
+        <script src="{% static 'js/script.js' %}"></script>
+        <p>&copy; {{ year }}</p>
+    </footer>
+</body>
+</html>
+
+
+{% extends "base.html" %}
+
+{% block title %}Home - My Site{% endblock %}
+
+{% block header %}Home Page{% endblock %}
+
+{% block content %}
+    <h2>Welcome to the Home Page</h2>
+    <!-- Display image -->
+    <img src="{% static 'images/logo.png' %}" alt="Site Logo">
+    <p>This is where the main content goes.</p>
+{% endblock %}
+
