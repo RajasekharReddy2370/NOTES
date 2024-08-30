@@ -22,7 +22,9 @@ orderstatus
 [new, available, active, completed, cancelled]
 
 deliverystatus
-[planned, active, finished, cancelled, delayed, failed]
+[invalid, draft, planned, active, finished, cancelled, delayed, failed, courier-assigned, courier-departered, courier-at-pickup, parcel-at-pickup,
+courier-arrived, deleted, return-planned, return-courier-assigned, return-courier-departed, return-courier-pickedup, return-finished,
+reattempt-planned,  reattempt-courier-assigned, reattempt-courier-departed,reattempt-courier-pickedup, reattempt-finished]
 
 ordertypes
 [standard, sameday, hyperlocal]
@@ -33,7 +35,132 @@ vehicle
 payments
 [cash, non-cash, bank-cards]
 
-THESE ARE THE PARAMETERS FOR API
+Label
+[zpl, pdf]
+
+ORDER PARAMETERS
+
+{
+  "order_id": "integer",  // Full order ID
+  "type": "string",  // Order type
+
+  "order_types": {
+    "matter": "string",  // Delivery contents
+    "order_name": "string",  // Order name (short order ID)
+    "vehicle_type_id": "integer"  // Vehicle type
+  },
+
+  "timestamps": {
+    "created_datetime": "timestamp",  // Order creation date and time
+    "finish_datetime": "timestamp / null"  // Order completion date and time
+  },
+
+  "status": {
+    "status": "string",  // Order status
+    "status_description": "string"  // Order status description
+  },
+
+  "weight_and_notifications": {
+    "total_weight_kg": "integer",  // Total weight in kilograms
+    "is_client_notification_enabled": "boolean",  // Whether to send SMS notifications to the client
+    "is_contact_person_notification_enabled": "boolean"  // Whether to send SMS notifications to recipients on addresses
+  },
+
+  "loaders_count": "integer",  // Number of necessary loaders to move the delivered goods, including the driver
+
+  "points": [
+    {
+      "point_id": "integer",  // Point ID
+      "delivery_id": "integer / null",  // Delivery ID
+      "address": "string",  // Street address
+      "contact_person": {
+        "phone": "phone",  // Phone number of the person at the address
+        "name": "string / null"  // Name of the person at the address
+      },
+      "client_order_id": "string / null",  // Your eshop's order ID. It will be sent in notifications instead of our delivery order ID
+      "latitude": "coordinate",  // Latitude of the location
+      "longitude": "coordinate",  // Longitude of the location
+      "required_start_datetime": "timestamp / null",  // How early the courier may arrive at the address
+      "required_finish_datetime": "timestamp / null",  // How late the courier may arrive at the address
+      "arrival_start_datetime": "timestamp / null",  // Estimated courier arrival time, upper bound
+      "arrival_finish_datetime": "timestamp / null",  // Estimated courier arrival time, lower bound
+      "courier_visit_datetime": "timestamp / null",  // Actual courier arrival time
+      "taking_amount": "money",  // Backpayment sum to receive from the contact person at the address
+      "buyout_amount": "money",  // Buyout sum the courier pays to the contact person at the address
+      "note": "string / null",  // Additional information for the courier: office or apartment number, company name, whether any documents are required to enter the building
+
+      "packages": [
+        {
+          "order_package_id": "integer",  // Package ID
+          "ware_code": "string",  // Vendor code
+          "description": "string",  // Description
+          "items_count": "float",  // Amount
+          "item_payment_amount": "string",  // Price per item
+          "nomenclature_code": "string",  // Nomenclature code
+          "is_cod_cash_voucher_required": "boolean",  // Whether to issue a cashier's check to the recipient at the address
+          "is_order_payment_here": "boolean",  // Money will be paid to the courier at the address
+          "building_number": "string / null",  // Building number
+          "entrance_number": "string / null",  // Entrance number
+          "intercom_code": "string / null",  // Intercom code
+          "floor_number": "string / null",  // Floor number
+          "apartment_number": "string / null",  // Apartment/office number
+          "invisible_mile_navigation_instructions": "string / null",  // Instruction to courier how to get to recipient at the address
+          "place_photo_url": "string / null",  // Place photo when closing a point at the address
+          "sign_photo_url": "string / null",  // Recipient's signature photo when closing a point at the address
+          "checkin_code": "string / null",  // Courier's arrival pin code at the point
+          "checkin": {
+            "recipient_full_name": "string / null",  // Full name of the recipient who met the courier
+            "recipient_position": "string / null",  // Position of the recipient who met the courier
+            "is_return_point": "boolean"  // Return point (same as first or hub)
+          },
+          "tracking_url": "string / null"  // Recipient's tracking link
+        }
+      ]
+    }
+  ],
+
+  "delivery": {
+    "status": "string",  // Delivery status
+    "payment_amount": "money / null",  // Order price
+    "delivery_fee_amount": "money / null",  // Delivery fee
+    "weight_fee_amount": "money / null",  // Large weight fee
+    "insurance_amount": "money / null",  // Insured amount
+    "insurance_fee_amount": "money / null",  // Insurance fee
+    "loading_fee_amount": "money / null",  // Loading / heavy lifting fee
+    "money_transfer_fee_amount": "money / null",  // Money handling fee: backpayment transfer, buyout operations
+    "cod_fee_amount": "money / null",  // Extra fee for issuing a cashier's check
+    "return_fee_amount": "money / null",  // Extra fee for return to first point
+    "waiting_fee_amount": "money / null",  // Extra fee for paid waiting at designated points
+    "backpayment_details": "string / null",  // Details of the money transfer for backpayment. A credit card number or other payment system information
+    "backpayment_photo_url": "string / null",  // URL of backpayment photo (receipt or other payment verification)
+    "itinerary_document_url": "string / null",  // URL of itinerary document
+    "waybill_document_url": "string / null"  // URL of waybill document
+  },
+
+  "courier": {
+    "courier_id": "integer",  // Courier ID
+    "surname": "string",  // Surname of the courier
+    "name": "string",  // Name of the courier
+    "middlename": "string",  // Middlename of the courier
+    "phone": "phone",  // Phone of the courier
+    "photo_url": "string / null",  // URL of the courier's photo
+    "latitude": "coordinate / null",  // Latitude of the location (Only for active orders, if the courier is on the way)
+    "longitude": "coordinate / null",  // Longitude of the location (Only for active orders, if the courier is on the way)
+    "is_motobox_required": "boolean",  // Is motobox required
+    "is_thermobox_required": "boolean"  // Is thermobox required
+  },
+
+  "payment": {
+    "payment_method": "string",  // Payment method
+    "bank_card_id": "integer / null",  // Bank card ID for bank_card payment method
+    "applied_promo_code": "string / null",  // Applied promo code
+    "is_return_required": "boolean",  // Order has return
+    "promo_code_discount_amount": "money"  // Discount amount by promo code
+  }
+}
+
+
+AFETR CREATING AN ORDER
 ########################################################################################
 "order": {
         "type": "standard",
