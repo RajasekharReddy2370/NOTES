@@ -15,24 +15,24 @@ RESPONSES
 200 ok
 400 bad request
 
-Datatypes
+Data Types
 [Boolean, integer, string, datye, Timestamp, float, jsonlist, jsonobject, money, phone, coordinate, null]
 
-orderstatus
+Order Status
 [new, available, active, completed, cancelled]
 
-deliverystatus
+Delivery Status
 [invalid, draft, planned, active, finished, cancelled, delayed, failed, courier-assigned, courier-departered, courier-at-pickup, parcel-at-pickup,
 courier-arrived, deleted, return-planned, return-courier-assigned, return-courier-departed, return-courier-pickedup, return-finished,
 reattempt-planned,  reattempt-courier-assigned, reattempt-courier-departed,reattempt-courier-pickedup, reattempt-finished]
 
-ordertypes
+Order Types
 [standard, sameday, hyperlocal]
 
 vehicle
 [public-transport(6), car(7), motorbike(8)]
 
-payments
+Payment Methods
 [cash, non-cash, bank-cards]
 
 Label Types
@@ -299,9 +299,9 @@ API METHODS
 
 1 . FOR CREATING ORDER
 
-For Default Payment Method payload
 POST https://robotapitest-in.borzodelivery.com/api/business/1.6/create-order
-parameters = {   
+For Default Payment Method payload
+{   
     "matter": "Documents",
     "points": [
         {
