@@ -35,8 +35,17 @@ vehicle
 payments
 [cash, non-cash, bank-cards]
 
-Label
+Label Types
 [zpl, pdf]
+"labels": [ 
+    { 
+      "type": "pdf", 
+      "order_id": 1250032, 
+      "point_id": 2783321, 
+      "delivery_id": null, 
+      "content_base64": "JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/AGwAYQBiAGUAbAAuAHAAZABm..." 
+    }, 
+
 
 ORDER PARAMETERS
 
