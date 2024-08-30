@@ -414,3 +414,54 @@ Payload
   "points":[{"address":"Saket, New Delhi, Delhi"},
   {"address":"Janakpuri, New Delhi, Delhi"}]
 }
+
+
+PROCESS FLOW
+
+Step 1: Create Order
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/create-order with the required payload (Default Payment Method or Bank Card Payment Method)
+    Receive order_id in response
+Step 2: Edit Order (Optional)
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/edit-order with the order_id and updated payload
+    Receive updated order details in response
+Step 3: Cancel Order (Optional)
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/cancel-order with the order_id
+    Receive cancellation confirmation in response
+Step 4: Get List of Orders
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/orders?status=available
+    Receive list of available orders in response
+Step 5: Get Courier Information and Location
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/courier?order_id={order_id}
+    Receive courier information and location in response
+Step 6: Get Client Information
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/client
+    Receive client information in response
+Step 7: Get Available Bank Cards
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/bank-cards
+    Receive list of available bank cards in response
+Step 8: Get Delivery Intervals
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/delivery-intervals
+    Receive list of delivery intervals in response
+Step 9: Create Draft Deliveries
+    Draft deliveries may have missing or incomplete information. This might include details such as recipient addresses, payment information, or package details.
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/create-deliveries with the required payload
+    Receive delivery_ids in response
+Step 10: Edit Draft Deliveries (Optional)
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/edit-deliveries with the delivery_ids and updated payload
+    Receive updated delivery details in response
+Step 11: Delete Draft Deliveries (Optional)
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/delete-deliveries with the delivery_ids
+    Receive deletion confirmation in response
+Step 12: Get List of Deliveries
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/deliveries?status=draft
+    Receive list of draft deliveries in response
+Step 13: Make Routes from Deliveries
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/make-deliveries-routes with the required payload
+    Receive calculated routes in response
+Step 14: Get List of Labels
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/labels?type=zpl&order_id[]={order_id}
+    Receive list of labels in response
+Step 15: Calculate Order Price
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/calculate-order with the required payload
+    Receive calculated order price in response
+
