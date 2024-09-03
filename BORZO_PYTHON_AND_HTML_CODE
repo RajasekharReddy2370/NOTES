@@ -1,0 +1,364 @@
+python_code
+from django.shortcuts import render
+import requests
+import json
+
+def create_order(request):
+    if request.method == 'POST':
+        # Extract data from the form
+        matter = request.POST.get('matter')
+        order_type = request.POST.get('type')
+        total_weight_kg = request.POST.get('total_weight_kg')
+
+        # Extract and format the points data
+        points = []
+        for i in range(10):  # assuming a max of 10 points for example
+            address = request.POST.get(f'points[{i}][address]')
+            if not address:
+                break
+            contact_name = request.POST.get(f'points[{i}][contact_person][name]')
+            contact_phone = request.POST.get(f'points[{i}][contact_person][phone]')
+            points.append({
+                "address": address,
+                "contact_person": {
+                    "name": contact_name,
+                    "phone": contact_phone
+                }
+            })
+
+        # Define the URL and headers
+        url = "https://robotapitest-in.borzodelivery.com/api/business/1.6/create-order"
+        headers = {
+            'X-DV-Auth-Token': '370561FC3C82DB38C83E65467A8D2429CC3D8E75',
+            'Content-Type': 'application/json'
+        }
+
+        # Define the data payload
+        data = {
+            "matter": matter,
+            "type": order_type,
+            "total_weight_kg": total_weight_kg,
+            "points": points
+        }
+
+        # Perform the HTTP POST request
+        response = requests.post(url, headers=headers, json=data)
+
+        # Convert the response to JSON format
+        response_data = response.json()
+
+        # Extract relevant fields from the response
+        result = {
+            "is_successful": response_data.get("is_successful"),
+            "order": {}
+        }
+
+        if response_data.get("order"):
+            order = response_data["order"]
+            result["order"] = {
+                "order_id": order.get("order_id"),
+                "points": []
+            }
+
+            for point in order.get("points", []):
+                point_details = {
+                    "address": point.get("address"),
+                    "contact_person": {
+                        "name": point.get("contact_person", {}).get("name"),
+                        "phone": point.get("contact_person", {}).get("phone")
+                    },
+                    "tracking_url": point.get("tracking_url")
+                }
+                result["order"]["points"].append(point_details)
+
+        # Render the HTML page with the filtered data
+        return render(request, 'trail/template/order.html', result)
+    else:
+        # If not POST, render the form page
+        return render(request, 'trail/template/create.html')
+        
+        
+##########################################################################################################################################################################################
+        
+        CREATE ORDER HTML pAGE
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .order-details {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .order-details th, .order-details td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .order-details th {
+            background-color: #f4f4f4;
+        }
+        .order-details tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Order</h1>
+
+    <form action="{% url 'create_order' %}" method="post">
+        {% csrf_token %}
+
+        <label for="matter">Matter:</label>
+        <input type="text" id="matter" name="matter" value="mobiles"><br><br>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" value="standard"><br><br>
+
+        <label for="total_weight_kg">Total Weight (kg):</label>
+        <input type="number" id="total_weight_kg" name="total_weight_kg" value="4"><br><br>
+
+        <h3>Points</h3>
+        <div id="points-container">
+            <div class="point">
+                <label for="address1"><b>FROM_Address : </b></label>
+                <input type="text" id="address1" name="points[0][address]" value="Saket, New Delhi, Delhi 110017, India"><br><br>
+
+                <label for="contact_name1">Contact Person Name:</label>
+                <input type="text" id="contact_name1" name="points[0][contact_person][name]" value="raj"><br><br>
+
+                <label for="contact_phone1">Contact Person Phone:</label>
+                <input type="text" id="contact_phone1" name="points[0][contact_person][phone]" value="911234567890"><br><br>
+            </div>
+            <div class="point">
+                <label for="address2"><b>TO_Address : </b></label>
+                <input type="text" id="address2" name="points[1][address]" value="Janakpuri, New Delhi, Delhi, India"><br><br>
+
+                <label for="contact_name2">Contact Person Name:</label>
+                <input type="text" id="contact_name2" name="points[1][contact_person][name]" value="chend"><br><br>
+
+                <label for="contact_phone2">Contact Person Phone:</label>
+                <input type="text" id="contact_phone2" name="points[1][contact_person][phone]" value="919876543210"><br><br>
+            </div>
+        </div>
+
+        <button type="submit"><b>SUBMIT ORDER</b></button>
+    </form>
+</body>
+</html>
+#################################################################################################################################################################
+
+RESPONSE HTML PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .order-details {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .order-details th, .order-details td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .order-details th {
+            background-color: #f4f4f4;
+        }
+        .order-details tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Details</h1>
+
+    {% if is_successful %}
+        <h2>Order ID: {{ order.order_id }}</h2>
+        <table class="order-details">
+            <thead>
+                <tr>
+                    <th>FT</th>  <!-- Added new column header -->
+                    <th>Address</th>
+                    <th>Contact Person Name</th>
+                    <th>Contact Person Phone</th>
+                    <th>Tracking URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for point in order.points %}
+                <tr>
+                    <td>{{ forloop.first|yesno:"From,To" }}</td>  <!-- Display 'From' for the first row, 'To' for the rest -->
+                    <td>{{ point.address }}</td>
+                    <td>{{ point.contact_person.name }}</td>
+                    <td>{{ point.contact_person.phone }}</td>
+                    <td><a href="{{ point.tracking_url }}" target="_blank">Track Order</a></td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="5">No points available</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No orders found.</p>
+    {% endif %}
+</body>
+</html>
+
+
+################################################################################ DYNAMIC PAYLOAD ##############################################
+
+class place_order(APIView):
+    def post(self, request):
+        try:
+            # Extract data from the request
+            matter = request.data.get("matter")
+            order_type = request.data.get("type")
+            total_weight_kg = request.data.get("total_weight_kg")
+            points = request.data.get("points", [])
+
+            # Define the URL and headers for the API call
+            url = "https://robotapitest-in.borzodelivery.com/api/business/1.6/create-order"
+            headers = {
+                'X-DV-Auth-Token': '370561FC3C82DB38C83E65467A8D2429CC3D8E75',
+                'Content-Type': 'application/json'
+            }
+
+            # Prepare the payload with dynamic values
+            payload = {
+                "matter": matter,
+                "type": order_type,
+                "total_weight_kg": total_weight_kg,
+                "points": points
+            }
+
+            # Perform the HTTP POST request to the external API
+            response = requests.post(url, headers=headers, json=payload)
+
+            # Convert the response to JSON format
+            response_data = response.json()
+
+            # Extract relevant fields from the response
+            result = {
+                "is_successful": response_data.get("is_successful"),
+                "order": {}
+            }
+
+            if response_data.get("order"):
+                order = response_data["order"]
+                result["order"] = {
+                    "order_id": order.get("order_id"),
+                    "payment_amount": order.get("payment_amount"),
+                    "points": []
+                }
+
+                for point in order.get("points", []):
+                    point_details = {
+                        "address": point.get("address"),
+                        "contact_person": {
+                            "name": point.get("contact_person", {}).get("name"),
+                            "phone": point.get("contact_person", {}).get("phone")
+                        },
+                        "tracking_url": point.get("tracking_url"),
+                    }
+                    result["order"]["points"].append(point_details)
+
+            # Return the structured response
+            return Response(result, status=status.HTTP_200_OK)
+
+        except requests.exceptions.RequestException as e:
+            # Handle any errors with the request to the external API
+            return Response({"error": str(e)}, status=status.HTTP_502_BAD_GATEWAY)
+
+        except Exception as e:
+            # Handle any other exceptions
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class price(APIView):
+    def post(self,request):
+        try:
+            # Extract data from the request
+            matter = request.data.get("matter")
+            order_type = request.data.get("type")
+            total_weight_kg = request.data.get("total_weight_kg")
+            points = request.data.get("points", [])
+
+            # Define the URL and headers for the API call
+            url = "https://robotapitest-in.borzodelivery.com/api/business/1.6/calculate-order"
+            headers = {
+                'X-DV-Auth-Token': '370561FC3C82DB38C83E65467A8D2429CC3D8E75',
+                'Content-Type': 'application/json'
+            }
+
+            # Prepare the payload with dynamic values
+            payload = {
+                "matter": matter,
+                "type": order_type,
+                "total_weight_kg": total_weight_kg,
+                "points": points
+            }
+
+            # Perform the HTTP POST request to the external API
+            response = requests.post(url, headers=headers, json=payload)
+
+            # Convert the response to JSON format
+            response_data = response.json()
+
+            # Extract relevant fields from the response
+            result = {
+                "is_successful": response_data.get("is_successful"),
+                "order": {}
+            }
+
+            if response_data.get("order"):
+                order = response_data["order"]
+                result["order"] = {
+                    "order_id": order.get("order_id"),
+                    "payment_amount": order.get("payment_amount"),
+                    "points": []
+                }
+
+                for point in order.get("points", []):
+                    point_details = {
+                        "address": point.get("address"),
+                        "contact_person": {
+                            "name": point.get("contact_person", {}).get("name"),
+                            "phone": point.get("contact_person", {}).get("phone")
+                        },
+                        # "tracking_url": point.get("tracking_url"),
+                    }
+                    result["order"]["points"].append(point_details)
+
+            # Return the structured response
+            return Response(result, status=status.HTTP_200_OK)
+
+        except requests.exceptions.RequestException as e:
+            # Handle any errors with the request to the external API
+            return Response({"error": str(e)}, status=status.HTTP_502_BAD_GATEWAY)
+
+        except Exception as e:
+            # Handle any other exceptions
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+        
