@@ -465,3 +465,19 @@ Step 15: Calculate Order Price
     Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/calculate-order with the required payload
     Receive calculated order price in response
 
+    PAYLOAD
+{
+    "matter": "electronics",
+    "type": "standard",
+    "total_weight_kg": 6,
+    "points": [
+        {
+            "address": "Saket, New Delhi, Delhi 110017, India",
+            "contact_person": {"name": "raja", "phone": "911234567890"}
+        },
+        {
+            "address": "Janakpuri, New Delhi, Delhi, India",
+            "contact_person": {"name": "chen", "phone": "919876543210"}
+        }
+    ]
+}
