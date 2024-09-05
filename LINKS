@@ -1,0 +1,40 @@
+figma link for eshipjet
+
+https://www.figma.com/design/DgbxcksKhuSCcsDzwSznoJ/eShipjet---RTC
+
+
+ONDC
+https://portal.ondc.org/
+email = info@createmystore.online
+password = Boom@143143
+
+subscriber_id = createmystore.online
+
+BORZO_LINKS
+
+URL for test requests: 
+https://robotapitest-in.borzodelivery.com/api/business/1.6
+
+URL for production requests: 
+https://robot-in.borzodelivery.com/api/business/1.6
+
+ https://borzodelivery.com/in/business-api/doc
+Borzo Test Token = 'X-DV-Auth-Token': '370561FC3C82DB38C83E65467A8D2429CC3D8E75',
+Borzo Production token: 9B4A84BBEC57ED51BED5C8D44E06BF4ED9C0FDD4
+
+for production Key
+https://borzodelivery.com/in/cabinet/integration
+
+
+
+LOGIN
+username : info@eshipjet.ai
+password : Boom@143
+
+BLOWHORN https://doc.blowhorn.com/api-docs/orders/booking-order
+
+https://dashboard.blowhorn.com/dashboard/integration/
+BlowHorn API_KEY: tqF4zGyJAfa7W6d1bP2Y0BpXRjwe3o
+username : info@eshipjet.ai
+password : Boom@143
+
