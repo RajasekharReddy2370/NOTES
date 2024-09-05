@@ -1,0 +1,520 @@
+Borzo
+Borzo is a delivery platform that offers a range of services, including on-demand delivery, same-day delivery, and scheduled delivery. 
+They provide an API that allows developers to integrate Borzo's delivery services into their own applications.
+
+Create and manage orders: You can use the API to create new orders, track existing orders, and update order details.
+Get pricing estimates: The API allows you to get estimated prices for deliveries based on the pickup and delivery locations, weight, dimensions, and other factors.
+Manage drivers: If you have your own fleet of drivers, you can use the API to manage them, assign orders, and track their location.
+Integrate with your application: The API provides a simple and flexible way to integrate Borzo's delivery services into your application.
+
+1 . Request Methods https [Get and Post Methods]
+post request should send in json format
+All requests must include a HTTP header X-DV-Auth-Token.
+RESPONSES 
+200 ok
+400 bad request
+
+Data Types
+[Boolean, integer, string, datye, Timestamp, float, jsonlist, jsonobject, money, phone, coordinate, null]
+
+Order Status
+[new, available, active, completed, cancelled]
+
+Delivery Status
+[invalid, draft, planned, active, finished, cancelled, delayed, failed, courier-assigned, courier-departered, courier-at-pickup, parcel-at-pickup,
+courier-arrived, deleted, return-planned, return-courier-assigned, return-courier-departed, return-courier-pickedup, return-finished,
+reattempt-planned,  reattempt-courier-assigned, reattempt-courier-departed,reattempt-courier-pickedup, reattempt-finished]
+
+Order Types
+[standard, sameday, hyperlocal]
+
+vehicle
+[public-transport(6), car(7), motorbike(8)]
+
+Payment Methods
+[cash, non-cash, bank-cards]
+
+Label Types
+[zpl, pdf]
+"labels": [ 
+    { 
+      "type": "pdf", 
+      "order_id": 1250032, 
+      "point_id": 2783321, 
+      "delivery_id": null, 
+      "content_base64": "JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/AGwAYQBiAGUAbAAuAHAAZABm..." 
+    }, 
+
+
+ORDER PARAMETERS
+
+{
+  "order_id": "integer",  // Full order ID
+  "type": "string",  // Order type
+
+  "order_types": {
+    "matter": "string",  // Delivery contents
+    "order_name": "string",  // Order name (short order ID)
+    "vehicle_type_id": "integer"  // Vehicle type
+  },
+
+  "timestamps": {
+    "created_datetime": "timestamp",  // Order creation date and time
+    "finish_datetime": "timestamp / null"  // Order completion date and time
+  },
+
+  "status": {
+    "status": "string",  // Order status
+    "status_description": "string"  // Order status description
+  },
+
+  "weight_and_notifications": {
+    "total_weight_kg": "integer",  // Total weight in kilograms
+    "is_client_notification_enabled": "boolean",  // Whether to send SMS notifications to the client
+    "is_contact_person_notification_enabled": "boolean"  // Whether to send SMS notifications to recipients on addresses
+  },
+
+  "loaders_count": "integer",  // Number of necessary loaders to move the delivered goods, including the driver
+
+  "points": [
+    {
+      "point_id": "integer",  // Point ID
+      "delivery_id": "integer / null",  // Delivery ID
+      "address": "string",  // Street address
+      "contact_person": {
+        "phone": "phone",  // Phone number of the person at the address
+        "name": "string / null"  // Name of the person at the address
+      },
+      "client_order_id": "string / null",  // Your eshop's order ID. It will be sent in notifications instead of our delivery order ID
+      "latitude": "coordinate",  // Latitude of the location
+      "longitude": "coordinate",  // Longitude of the location
+      "required_start_datetime": "timestamp / null",  // How early the courier may arrive at the address
+      "required_finish_datetime": "timestamp / null",  // How late the courier may arrive at the address
+      "arrival_start_datetime": "timestamp / null",  // Estimated courier arrival time, upper bound
+      "arrival_finish_datetime": "timestamp / null",  // Estimated courier arrival time, lower bound
+      "courier_visit_datetime": "timestamp / null",  // Actual courier arrival time
+      "taking_amount": "money",  // Backpayment sum to receive from the contact person at the address
+      "buyout_amount": "money",  // Buyout sum the courier pays to the contact person at the address
+      "note": "string / null",  // Additional information for the courier: office or apartment number, company name, whether any documents are required to enter the building
+
+      "packages": [
+        {
+          "order_package_id": "integer",  // Package ID
+          "ware_code": "string",  // Vendor code
+          "description": "string",  // Description
+          "items_count": "float",  // Amount
+          "item_payment_amount": "string",  // Price per item
+          "nomenclature_code": "string",  // Nomenclature code
+          "is_cod_cash_voucher_required": "boolean",  // Whether to issue a cashier's check to the recipient at the address
+          "is_order_payment_here": "boolean",  // Money will be paid to the courier at the address
+          "building_number": "string / null",  // Building number
+          "entrance_number": "string / null",  // Entrance number
+          "intercom_code": "string / null",  // Intercom code
+          "floor_number": "string / null",  // Floor number
+          "apartment_number": "string / null",  // Apartment/office number
+          "invisible_mile_navigation_instructions": "string / null",  // Instruction to courier how to get to recipient at the address
+          "place_photo_url": "string / null",  // Place photo when closing a point at the address
+          "sign_photo_url": "string / null",  // Recipient's signature photo when closing a point at the address
+          "checkin_code": "string / null",  // Courier's arrival pin code at the point
+          "checkin": {
+            "recipient_full_name": "string / null",  // Full name of the recipient who met the courier
+            "recipient_position": "string / null",  // Position of the recipient who met the courier
+            "is_return_point": "boolean"  // Return point (same as first or hub)
+          },
+          "tracking_url": "string / null"  // Recipient's tracking link
+        }
+      ]
+    }
+  ],
+
+  "delivery": {
+    "status": "string",  // Delivery status
+    "payment_amount": "money / null",  // Order price
+    "delivery_fee_amount": "money / null",  // Delivery fee
+    "weight_fee_amount": "money / null",  // Large weight fee
+    "insurance_amount": "money / null",  // Insured amount
+    "insurance_fee_amount": "money / null",  // Insurance fee
+    "loading_fee_amount": "money / null",  // Loading / heavy lifting fee
+    "money_transfer_fee_amount": "money / null",  // Money handling fee: backpayment transfer, buyout operations
+    "cod_fee_amount": "money / null",  // Extra fee for issuing a cashier's check
+    "return_fee_amount": "money / null",  // Extra fee for return to first point
+    "waiting_fee_amount": "money / null",  // Extra fee for paid waiting at designated points
+    "backpayment_details": "string / null",  // Details of the money transfer for backpayment. A credit card number or other payment system information
+    "backpayment_photo_url": "string / null",  // URL of backpayment photo (receipt or other payment verification)
+    "itinerary_document_url": "string / null",  // URL of itinerary document
+    "waybill_document_url": "string / null"  // URL of waybill document
+  },
+
+  "courier": {
+    "courier_id": "integer",  // Courier ID
+    "surname": "string",  // Surname of the courier
+    "name": "string",  // Name of the courier
+    "middlename": "string",  // Middlename of the courier
+    "phone": "phone",  // Phone of the courier
+    "photo_url": "string / null",  // URL of the courier's photo
+    "latitude": "coordinate / null",  // Latitude of the location (Only for active orders, if the courier is on the way)
+    "longitude": "coordinate / null",  // Longitude of the location (Only for active orders, if the courier is on the way)
+    "is_motobox_required": "boolean",  // Is motobox required
+    "is_thermobox_required": "boolean"  // Is thermobox required
+  },
+
+  "payment": {
+    "payment_method": "string",  // Payment method
+    "bank_card_id": "integer / null",  // Bank card ID for bank_card payment method
+    "applied_promo_code": "string / null",  // Applied promo code
+    "is_return_required": "boolean",  // Order has return
+    "promo_code_discount_amount": "money"  // Discount amount by promo code
+  }
+}
+
+
+AFETR CREATING AN ORDER
+########################################################################################
+"order": {
+        "type": "standard",
+        "order_id": 238854,
+        "order_name": "38854",
+        "vehicle_type_id": 8,
+        "created_datetime": "2024-08-30T13:09:03+05:30",
+        "finish_datetime": null,
+        "status": "new",
+        "status_description": "Created",
+        "matter": "Documents",
+        "total_weight_kg": 0,
+        "is_client_notification_enabled": false,
+        "is_contact_person_notification_enabled": false,
+        "loaders_count": 0,
+        "backpayment_details": null,
+        "points": [
+            {
+                "point_type": "plain",
+                "point_id": 528200,
+                "delivery_id": null,
+                "client_order_id": null,
+                "address": "Saket, New Delhi, Delhi 110017, India",
+                "latitude": "28.5220971",
+                "longitude": "77.2101534",
+                "required_start_datetime": "2024-08-30T13:09:03+05:30",
+                "required_finish_datetime": "2024-08-30T14:30:00+05:30",
+                "arrival_start_datetime": null,
+                "arrival_finish_datetime": null,
+                "estimated_arrival_datetime": null,
+                "courier_visit_datetime": null,
+                "contact_person": {
+                    "name": null,
+                    "phone": "918880000001"
+                },
+                "taking_amount": "0.00",
+                "buyout_amount": "0.00",
+                "note": null,
+                "previous_point_driving_distance_meters": 0,
+                "packages": [],
+                "is_cod_cash_voucher_required": false,
+                "place_photo_url": null,
+                "sign_photo_url": null,
+                "tracking_url": "https://apitest.borzodelivery.com/in/track/PG3RFHCFK4XXIN",
+                "checkin_code": null,
+                "checkin": null,
+                "is_return_point": false,
+                "is_order_payment_here": false,
+                "building_number": null,
+                "entrance_number": null,
+                "intercom_code": null,
+                "floor_number": null,
+                "apartment_number": null,
+                "invisible_mile_navigation_instructions": null,
+                "delivery": null
+            },
+            {
+                "point_type": "plain",
+                "point_id": 528201,
+                "delivery_id": 155758,
+                "client_order_id": null,
+                "address": "Janakpuri, New Delhi, Delhi, India",
+                "latitude": "28.621899",
+                "longitude": "77.0878385",
+                "required_start_datetime": "2024-08-30T13:09:03+05:30",
+                "required_finish_datetime": "2024-08-30T15:00:00+05:30",
+                "arrival_start_datetime": null,
+                "arrival_finish_datetime": null,
+                "estimated_arrival_datetime": null,
+                "courier_visit_datetime": null,
+                "contact_person": {
+                    "name": null,
+                    "phone": "918880000001"
+                },
+                "taking_amount": "0.00",
+                "buyout_amount": "0.00",
+                "note": null,
+                "previous_point_driving_distance_meters": 23014,
+                "packages": [],
+                "is_cod_cash_voucher_required": false,
+                "place_photo_url": null,
+                "sign_photo_url": null,
+                "tracking_url": "https://apitest.borzodelivery.com/in/track/PGJ4WJ6L1H57IN",
+                "checkin_code": null,
+                "checkin": null,
+                "is_return_point": false,
+                "is_order_payment_here": false,
+                "building_number": null,
+                "entrance_number": null,
+                "intercom_code": null,
+                "floor_number": null,
+                "apartment_number": null,
+                "invisible_mile_navigation_instructions": null,
+                "delivery": {
+                    "status": "planned"
+                }
+            }
+        ],
+        "payment_amount": "230.13",
+        "delivery_fee_amount": "230.13",
+        "weight_fee_amount": "0.00",
+        "insurance_amount": "0.00",
+        "insurance_fee_amount": "0.00",
+        "loading_fee_amount": "0.00",
+        "money_transfer_fee_amount": "0.00",
+        "door_to_door_fee_amount": "0.00",
+        "promo_code_discount_amount": "0.00",
+        "backpayment_amount": "0.00",
+        "cod_fee_amount": "0.00",
+        "return_fee_amount": "0.00",
+        "waiting_fee_amount": "0.00",
+        "backpayment_photo_url": null,
+        "itinerary_document_url": null,
+        "waybill_document_url": null,
+        "courier": null,
+        "is_motobox_required": false,
+        "is_thermobox_required": false,
+        "payment_method": "balance",
+        "bank_card_id": null,
+        "applied_promo_code": null,
+        "is_return_required": false
+    }
+}
+
+##########################################################
+API METHODS
+
+1 . FOR CREATING ORDER
+
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/create-order
+For Default Payment Method payload
+{   
+    "matter": "Documents",
+    "points": [
+        {
+            "address": "Saket, New Delhi, Delhi",
+            "contact_person": {"phone": "918880000001"}
+        },
+        {
+            "address": "Janakpuri, New Delhi, Delhi",
+            "contact_person": {"phone": "918880000001"}
+        }
+    ]
+}
+
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/create-order
+FOR BANK_CARD_PAYMENT_METHOD payload
+
+{
+    "matter": "Documents",
+    "payment_method": "cash",
+    "bank_card_id": 80,
+    "points": [
+        {
+            "address": "Saket, New Delhi, Delhi",
+            "contact_person": {"phone": "918880000001"}
+        },
+        {
+            "address": "Janakpuri, New Delhi, Delhi",
+            "contact_person": {"phone": "918880000001"}
+        }
+    ]
+}
+
+
+2 . FOR EDITING ORDER
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/edit-order
+payload
+{
+    "order_id":238854,
+    "matter":"Flowers",
+    "backpayment_details":null
+}
+
+3 . FOR CANCELLING ORDER
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/cancel-order
+Payload
+{
+"order_id":1250032
+}
+
+4 . FOR LIST OF ORDERS
+GET https://robotapitest-in.borzodelivery.com/api/business/1.6/orders?status=available
+
+5 . FOR COURIER INFO AND COURIER LOCATION
+GET https://robotapitest-in.borzodelivery.com/api/business/1.6/courier?order_id=1250032
+
+6 . FOR CLIENT INFORMATION
+GET https://robotapitest-in.borzodelivery.com/api/business/1.6/client
+
+7 . FOR AVAILABLE BANK CARDS
+GET https://robotapitest-in.borzodelivery.com/api/business/1.6/bank-cards
+
+8 . LIST OF DELIVERY INTERVALS
+GET https://robotapitest-in.borzodelivery.com/api/business/1.6/delivery-intervals
+
+9 . FOR CREATE DRAFT DELIVERIES
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/create-deliveries
+payload
+{
+  "deliveries":[{"matter":"Documents","address":"Saket, New Delhi, Delhi","weight_kg":1,"contact_person":{"phone":"918880000001"}},
+  {"matter":"Flowers","address":"Janakpuri, New Delhi, Delhi","weight_kg":2,"contact_person":{"phone":"918880000001"}}]
+}
+
+10 . FOR EDIT DRAFT DELIVERIES
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/edit-deliveries
+payload
+{
+  "deliveries":[{"delivery_id":11712,"matter":"Flowers","note":null},
+  {"delivery_id":11713,"packages":[{"delivery_package_id":32251,"items_count":3},
+  {"delivery_package_id":32252}]}]
+}
+
+11 . FOR DELETING DRAFT DELEVERIES
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/delete-deliveries
+payload
+{
+  "delivery_ids":[11712, 11713]
+}
+
+
+12 . THIS WILL GIVE LIST OF DELEVERIES
+GET https://robotapitest-in.borzodelivery.com/api/business/1.6/deliveries?status=draft
+
+13 . MAKE ROUTES FROM DELEVERIES
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/make-deliveries-routes
+This API method can calculate routes from draft deliveries. The received data can be used when creating an order.
+payload
+{
+  "start_point":{"address":"Saket, New Delhi, Delhi","required_start_datetime":"2024-08-30T13:45:21+05:30","required_finish_datetime":"2024-08-30T14:15:21+05:30"},
+  "deliveries":[{"delivery_id":11712},{"delivery_id":11713},{"delivery_id":11714},{"delivery_id":11715}]
+}
+
+14 . LIST OF LABELS
+GET https://robotapitest-in.borzodelivery.com/api/business/1.6/labels?type=zpl&order_id[]=1250032&order_id[]=1250033
+
+15 . ORDER PRICE CALCULATION
+POST https://robotapitest-in.borzodelivery.com/api/business/1.6/calculate-order
+Payload
+{
+  "matter":"Documents",
+  "points":[{"address":"Saket, New Delhi, Delhi"},
+  {"address":"Janakpuri, New Delhi, Delhi"}]
+}
+
+
+PROCESS FLOW
+
+Step 1: Create Order
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/create-order with the required payload (Default Payment Method or Bank Card Payment Method)
+    Receive order_id in response
+Step 2: Edit Order (Optional)
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/edit-order with the order_id and updated payload
+    Receive updated order details in response
+Step 3: Cancel Order (Optional)
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/cancel-order with the order_id
+    Receive cancellation confirmation in response
+Step 4: Get List of Orders
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/orders?status=available
+    Receive list of available orders in response
+Step 5: Get Courier Information and Location
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/courier?order_id={order_id}
+    Receive courier information and location in response
+Step 6: Get Client Information
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/client
+    Receive client information in response
+Step 7: Get Available Bank Cards
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/bank-cards
+    Receive list of available bank cards in response
+Step 8: Get Delivery Intervals
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/delivery-intervals
+    Receive list of delivery intervals in response
+Step 9: Create Draft Deliveries
+    Draft deliveries may have missing or incomplete information. This might include details such as recipient addresses, payment information, or package details.
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/create-deliveries with the required payload
+    Receive delivery_ids in response
+Step 10: Edit Draft Deliveries (Optional)
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/edit-deliveries with the delivery_ids and updated payload
+    Receive updated delivery details in response
+Step 11: Delete Draft Deliveries (Optional)
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/delete-deliveries with the delivery_ids
+    Receive deletion confirmation in response
+Step 12: Get List of Deliveries
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/deliveries?status=draft
+    Receive list of draft deliveries in response
+Step 13: Make Routes from Deliveries
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/make-deliveries-routes with the required payload
+    Receive calculated routes in response
+Step 14: Get List of Labels
+    Send a GET request to https://robotapitest-in.borzodelivery.com/api/business/1.6/labels?type=zpl&order_id[]={order_id}
+    Receive list of labels in response
+Step 15: Calculate Order Price
+    Send a POST request to https://robotapitest-in.borzodelivery.com/api/business/1.6/calculate-order with the required payload
+    Receive calculated order price in response
+    
+ 
+
+    PAYLOAD
+
+{
+    "matter": "EmptyBag",
+    "type": "standard",
+    "vehicle_type_id": 8,
+    "total_weight_kg": 1,
+    "payment_method": "payment_system",
+    "points": [
+        {
+            "address": "3rd floor, C9WP+G77 Regus Building, Capital Pk Rd, VIP Hills, Jaihind Enclave, HITEC City, ",
+            "latitude": "17.446366",
+            "longitude": "78.385841",
+            "contact_person": {"name": "Rajasekhar Reedy", "phone": "919701488435"}
+        },
+        {
+            "address": "Venkata guru manikanta women's hostel  ayyapa society,srisai nagar,madhapur, Hyderabad, Telangana 500081",
+            "latitude": "17.443359",
+            "longitude": "78.390421",
+            "contact_person": {"name": "Ramya", "phone": "917671969831"}
+        }
+    ]
+}
+
+
+
+
+{
+    "is_successful": true,
+    "order": {
+        "order_id": 54700096,
+        "payment_amount": "69.00",
+        "points": [
+            {
+                "address": "3rd floor, C9WP+G77 Regus Building, Capital Pk Rd, VIP Hills, Jaihind Enclave, HITEC City,",
+                "contact_person": {
+                    "name": "Rajasekhar Reedy",
+                    "phone": "919701488435"
+                },
+                "tracking_url": "https://borzodelivery.com/in/track/PGF5MRK5R9NRIN"
+            },
+            {
+                "address": "Venkata guru manikanta women's hostel  ayyapa society,srisai nagar,madhapur, Hyderabad, Telangana 500081",
+                "contact_person": {
+                    "name": "Ramya",
+                    "phone": "917671969831"
+                },
+                "tracking_url": "https://borzodelivery.com/in/track/PGAH5NJI63EDIN"
+            }
+        ]
+    }
+}
