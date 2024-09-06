@@ -8,10 +8,13 @@ https://portal.ondc.org/
 email = info@createmystore.online
 password = Boom@143143
 
+Signing_private_key:   mvXb2Ch8K+UPbfw/SffY9gr+xA0z3+0mticR1o8rczKhkoBgLpNz3mLTh9q8ahTPk3XLqoBrRdzz6BRZKHke5w==
+Signing_public_key:    oZKAYC6Tc95i04favGoUz5N1y6qAa0Xc8+gUWSh5Huc=
+Encryption_Privatekey: MC4CAQAwBQYDK2VuBCIEIACszgfOj0qu5zGqwfD0tzr6YLIeL4skvgUvhUr/qvNU
+Encryption_Publickey:  MCowBQYDK2VuAyEAmLhAvCH4OZ9T158wIVh3NV8WY51IjzqyCMe7gKWI8yE=
 subscriber_id = createmystore.online
 
 BORZO_LINKS
-
 URL for test requests: 
 https://robotapitest-in.borzodelivery.com/api/business/1.6
 

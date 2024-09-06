@@ -518,3 +518,167 @@ Step 15: Calculate Order Price
         ]
     }
 }
+
+
+###########################################################################################################################
+Borzo API:
+
+Create order:
+
+
+{
+
+  "type": "standard",
+
+  "matter": "Food",
+
+  "vehicle_type_id": "8",
+
+  "total_weight_kg": "2",
+
+  "is_client_notification_enabled": true,
+
+  "is_contact_person_notification_enabled": true,
+
+  "points": [
+
+    {
+
+      "address": "B-24, Block B, Sector 3, Noida, Uttar Pradesh 201301",
+
+       "client_order_id": "37879",
+
+       "note": "Note for Courier",
+
+      "contact_person": {
+
+        "name": "Sonia Singh",
+
+        "phone": "7988451542"
+
+
+
+      },
+
+    "latitude":28.57908,
+
+    "longitude":77.31912
+
+    },
+
+    {
+
+      "address": "Nature Herbs, A-78, JJ Colony, Sector 4, Noida, Uttar Pradesh 201301",
+
+
+      "contact_person": {
+
+        "name": "Yash Sharma",
+
+        "phone": "6742127113"
+
+      },
+
+    "latitude":28.583905,
+
+    "longitude":77.322733
+
+    }
+
+  ]
+
+}
+
+
+COD create order:
+{
+  "type": "standard",
+  "matter": "Food",
+  "total_weight_kg": "2",
+  "insurance_amount":1000.0,
+"is_contact_person_notification_enabled": true,
+  "points": [
+    {
+      "address": "B-24, Block B, Sector 3, Noida, Uttar Pradesh 201301",
+      "contact_person": {
+        "name": "Sonia Singh",
+        "phone": "7988451542"
+      },
+      "latitude":28.57908,
+    "longitude":77.31912,
+      "client_order_id": "867799618"
+    },
+    {
+      "address": "Nature Herbs, A-78, JJ Colony, Sector 4, Noida, Uttar Pradesh 201301",
+      "contact_person": {
+        "name": "Yash Sharma",
+        "phone": "6742127113"
+      },
+      "latitude":28.583905,
+       "longitude":77.322733,
+      "client_order_id": "867799618",
+      "taking_amount": "1590.00",
+      "is_cod_cash_voucher_required": true
+    }
+  ]
+}
+
+
+Calculate order price:
+
+{
+
+  "type": "standard",
+
+  "matter": "Food",
+
+
+
+  "points": [
+
+    {
+
+      "address": "B-24, Block B, Sector 3, Noida, Uttar Pradesh 201301",
+
+       "client_order_id": "37879",
+
+       "note": "Note for Courier",
+
+      "contact_person": {
+
+        "name": "Sonia Singh",
+
+        "phone": "7988451542"
+
+
+
+      },
+
+    "latitude":28.57908,
+
+    "longitude":77.31912
+
+    },
+
+    {
+
+      "address": "Nature Herbs, A-78, JJ Colony, Sector 4, Noida, Uttar Pradesh 201301",
+
+
+      "contact_person": {
+
+        "name": "Yash Sharma",
+
+        "phone": "6742127113"
+
+      },
+
+    "latitude":28.583905,
+
+    "longitude":77.322733
+
+    }
+
+  ]
+
+}
