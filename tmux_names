@@ -7,3 +7,5 @@ cntrl+b then d for detach
 
 IN CPU
 ondc
+
+tmux attach-session -t ondc
