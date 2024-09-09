@@ -2,6 +2,7 @@
 To install pycharm after downloading
 sudo snap install pycharm-community --classic
 
+sudo apt install openssh-server
 cpu ip address DVPL_5g
 CPU
 username rajasekharreddy
