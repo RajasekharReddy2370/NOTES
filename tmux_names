@@ -1,0 +1,7 @@
+tmux new -s name
+tmux attach -r name
+cntrl+b then shift+%  for new tmux
+cntrl+b then arrows  for changing tmux terminals
+cntrl+b then d for detach
+
+ondc
