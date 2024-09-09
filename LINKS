@@ -14,6 +14,19 @@ Encryption_Privatekey: MC4CAQAwBQYDK2VuBCIEIACszgfOj0qu5zGqwfD0tzr6YLIeL4skvgUvh
 Encryption_Publickey:  MCowBQYDK2VuAyEAmLhAvCH4OZ9T158wIVh3NV8WY51IjzqyCMe7gKWI8yE=
 subscriber_id = createmystore.online
 
+swagger ondc link
+https://app.swaggerhub.com/apis-docs/ONDC/ONDC-Registry-Onboarding/2.0.5#/ONDC%20Network%20Participant%20Onboarding/post_callback_url_on_subscribe
+POST http://192.168.12.81:8080/subscribe
+{
+    "success": "ACK"
+}
+
+POST http://192.168.12.81:8080/callback_url/on_subscribe
+{
+  "subscriber_id": "createmystore.online",
+  "challenge": "MCowBQYDK2VuAyEAmLhAvCH4OZ9T158wIVh3NV8WY51IjzqyCMe7gKWI8yE="
+}
+
 BORZO_LINKS
 URL for test requests: 
 https://robotapitest-in.borzodelivery.com/api/business/1.6
