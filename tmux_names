@@ -7,5 +7,6 @@ cntrl+b then d for detach
 
 IN CPU
 ondc
-
+tmux ls  [for tmux list names]
 tmux attach-session -t ondc
+cntrl+b then d [to detach]
