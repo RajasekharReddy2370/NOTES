@@ -4,17 +4,24 @@ sudo snap install pycharm-community --classic
 
 sudo apt install openssh-server
 cpu ip address DVPL_5g
-CPU
-username rajasekharreddy
-192.168.100.83
+CPU username rajasekharreddy
+Laptop username rajashekar
+
+FOR DVPL_5G IP ADDRESS
+192.168.100.83 [CPU]
+192.168.100.142 [LAPTOP]
 
 whoami [For Username]
 
 for ip address
 ip a
 
-LAPTOP
-rajashekar
-192.168.100.142
-
 cntrl+d to exit
+
+For Regus IP ADDRESS
+192.168.100.142/24 [Laptop]
+192.168.12.81 [CPU]
+
+
+
+
