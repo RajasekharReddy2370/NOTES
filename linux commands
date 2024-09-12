@@ -19,7 +19,7 @@ ip a
 cntrl+d to exit
 
 For Regus IP ADDRESS
-192.168.100.142/24 [Laptop]
+192.168.100.142 [Laptop]
 192.168.12.81 [CPU]
 
 

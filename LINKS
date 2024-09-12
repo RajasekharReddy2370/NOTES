@@ -8,6 +8,9 @@ https://portal.ondc.org/
 email = info@createmystore.online
 password = Boom@143143
 
+
+
+
 Signing_private_key:   mvXb2Ch8K+UPbfw/SffY9gr+xA0z3+0mticR1o8rczKhkoBgLpNz3mLTh9q8ahTPk3XLqoBrRdzz6BRZKHke5w==
 Signing_public_key:    oZKAYC6Tc95i04favGoUz5N1y6qAa0Xc8+gUWSh5Huc=
 Encryption_Privatekey: MC4CAQAwBQYDK2VuBCIEIACszgfOj0qu5zGqwfD0tzr6YLIeL4skvgUvhUr/qvNU
@@ -47,7 +50,11 @@ password : Boom@143
 
 Borzo new account ra
 Username:  9154927351
- Temporary Password: Password@123
+Temporary Password: Password@123
+
+API test server link: https://apitest.borzodelivery.com/in
+Username: info@eshipjet.ai
+Password: Eship@8264
 
 BLOWHORN https://doc.blowhorn.com/api-docs/orders/booking-order
 
