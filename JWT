@@ -11,3 +11,39 @@ add corsheaders in installed apps and middleware
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+
+# class LoginView(APIView):
+#     def post(self, request):
+#         email = request.data.get('email')
+#         password = request.data.get('password')
+#
+#         if not email or not password:
+#             raise AuthenticationFailed("Both email and password are required.")
+#
+#         user = User.objects.filter(email=email).first()
+#
+#         if user is None:
+#             raise AuthenticationFailed("User not found.")
+#
+#         if not user.check_password(password):
+#             raise AuthenticationFailed("Incorrect password.")
+#
+#         payload = {
+#             "id":user.id,
+#             'exp':datetime.datetime.utcnow()+datetime.timedelta(minutes = 60),
+#             'iat':datetime.datetime.utcnow()
+#         }
+#
+#         token = jwt.encode(payload,'secret',algorithm='HS256').decode('utf-8')
+#
+#         # Authentication successful
+#         # return Response({'message': 'Login successful.'})
+#         # response = Response({
+#         #     'jwt':token
+#         # })
+#
+#         response = Response()
+#         response.set_cookie(key = 'jwt',value = token,httponly  = True)
+#         response.data = {
+#             'jwt':token
+#         }
