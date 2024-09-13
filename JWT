@@ -1,4 +1,13 @@
 JWT
 
-pip install PyJWT
-pip install Django-cors-headers
+
+create a simple django project
+
+create Register and Login
+
+install PyJWT ,django-cors-headers
+
+add corsheaders in installed apps and middleware
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
