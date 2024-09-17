@@ -41,8 +41,8 @@ type message "hello"
 ValueError: No application configured for scope type 'websocket'
 WebSocket DISCONNECT /ws/chat/lobby/ [127.0.0.1:47356]
 
-http request-project urls - app urls-app views -response
-websocket connection - routing - consumers - events [connect, disconnect, receive]
+http request =  "first_hits" project_urls "then_hits" app_urls "then_hits" app_views "then_gives_output" response
+websocket connection =  "first_hits" routing "then_hits" consumers "then" events [connect, disconnect, receive]
 
 create consumers(like views)
 create routing(like urls)
