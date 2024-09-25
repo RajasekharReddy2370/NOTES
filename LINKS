@@ -17,6 +17,9 @@ Encryption_Privatekey: MC4CAQAwBQYDK2VuBCIEIACszgfOj0qu5zGqwfD0tzr6YLIeL4skvgUvh
 Encryption_Publickey:  MCowBQYDK2VuAyEAmLhAvCH4OZ9T158wIVh3NV8WY51IjzqyCMe7gKWI8yE=
 subscriber_id = createmystore.online
 
+FAQs
+https://docs.google.com/document/d/15Dpy02lqtcU9tslyMqaI4UtnD2rtwnjAbn1narO0364/edit#heading=h.69ojsi3hg052
+
 swagger ondc link
 https://app.swaggerhub.com/apis-docs/ONDC/ONDC-Registry-Onboarding/2.0.5#/ONDC%20Network%20Participant%20Onboarding/post_callback_url_on_subscribe
 POST http://192.168.12.81:8080/subscribe
