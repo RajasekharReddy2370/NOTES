@@ -20,6 +20,9 @@ https://github.com/ONDC-Official/developer-docs/blob/main/registry/Onboarding%20
 FAQs
 https://docs.google.com/document/d/15Dpy02lqtcU9tslyMqaI4UtnD2rtwnjAbn1narO0364/edit#heading=h.69ojsi3hg052
 
+python server code
+https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/on_subscibe-service/python
+
 swagger ondc link
 https://app.swaggerhub.com/apis-docs/ONDC/ONDC-Registry-Onboarding/2.0.5#/ONDC%20Network%20Participant%20Onboarding/post_callback_url_on_subscribe
 POST http://192.168.12.81:8080/subscribe
