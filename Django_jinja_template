@@ -21,7 +21,6 @@
 </body>
 </html>
 
-
 {% extends "base.html" %}
 
 {% block title %}Home - My Site{% endblock %}

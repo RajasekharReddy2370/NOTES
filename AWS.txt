@@ -1,0 +1,10 @@
+AWS
+Amazon_Web_services
+
+Account
+Application&Deploy
+server
+
+- Public community Private Hybrid
+- On personnel -Infrastructure as a service -Platform as a service -Software as a service
+
