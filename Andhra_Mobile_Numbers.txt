@@ -1,0 +1,175 @@
+1 Anantapur Urban-153-AC- iToC Voter Data.xlsx 97028
+2 Guntur East-95-AC- iToC Voter Data.xlsx 93840
+3 Narasannepta-8-AC- iToC Voter Data.xlsx 41000
+4 Gurazala-100-AC- iToC Voter Data.xlsx 50178
+5 Chodavaram-26-AC- iToC Voter Data.xlsx 33241
+6 Nuzvid-70-AC- iToC Voter Data.xlsx 36166
+7 Nellore City-117-AC- iToC Voter Data.xlsx 71153
+8 Kanigiri-113-AC- iToC Voter Data.xlsx 40006
+9 Sattenapalli-98-AC- iToC Voter Data.xlsx 44354
+10 Kalyandurg-154-AC- iToC Voter Data.xlsx 37381
+11 Pendurthi-31-AC- iToC Voter Data.xlsx 83229
+12 Gudur-120-AC- iToC Voter Data.xlsx 41917
+13 Palamaner-174-AC- iToC Voter Data.xlsx 66512
+14 Mantralayam-145-AC- iToC Voter Data.xlsx 15632
+15 Nagari-170-AC- iToC Voter Data.xlsx 46415
+16 Peddapuram-39-AC- iToC Voter Data.xlsx 51602
+17 Rayachoti-128-AC- iToC Voter Data.xlsx 50844
+18 Kadiri-161-AC- iToC Voter Data.xlsx 60647
+19 Madanapalle-164-AC- iToC Voter Data.xlsx 85112
+20 Panyam-138-AC- iToC Voter Data.xlsx 73921
+21 Vinukonda-99-AC- iToC Voter Data.xlsx 43216
+22 Kaikalur-73-AC- iToC Voter Data.xlsx 46273
+23 Tirupati-167-AC- iToC Voter Data.xlsx 135192
+24 Paderu-29-AC- iToC Voter Data.xlsx 19196
+25 Madakasira-156-AC- iToC Voter Data.xlsx 31661
+26 Ramachandrapuram-42-AC- iToC Voter Data.xlsx 42865
+27 Atmakur-115-AC- iToC Voter Data.xlsx 22913
+28 Srisailam-135-AC- iToC Voter Data.xlsx 37047
+29 Bhimavaram-59-AC- iToC Voter Data.xlsx 65673
+30 Chandragiri-166-AC- iToC Voter Data.xlsx 89755
+31 Kodur-127-AC- iToC Voter Data.xlsx 41086
+32 Anaparthy-40-AC- iToC Voter Data.xlsx 56407
+33 Markapuram-111-AC- iToC Voter Data.xlsx 51518
+34 Palacole-57-AC- iToC Voter Data.xlsx 36681
+35 Gajuwaka-25-AC- iToC Voter Data.xlsx 111784
+36 Mangalagiri-87-AC- iToC Voter Data.xlsx 77393
+37 Allagadda-134-AC- iToC Voter Data.xlsx 41330
+38 Machilipatnam-75-AC- iToC Voter Data.xlsx 50163
+39 Sullurpeta-121-AC- iToC Voter Data.xlsx 41785
+40 Nidadavole-55-AC- iToC Voter Data.xlsx 35406
+41 Rayadurg-148-AC- iToC Voter Data.xlsx 48557
+42 Pedana-74-AC- iToC Voter Data.xlsx 33380
+43 Penukonda-158-AC- iToC Voter Data.xlsx 39852
+44 Chittoor-172-AC- iToC Voter Data.xlsx 71895
+45 Alur-147-AC- iToC Voter Data.xlsx 27412
+46 Mummidivaram-43-AC- iToC Voter Data.xlsx 58843
+47 Guntakal-150-AC- iToC Voter Data.xlsx 80103
+48 Srikakulam-5-AC- iToC Voter Data.xlsx 57684
+49 Bobbili-14-AC- iToC Voter Data.xlsx 36729
+50 Vijaywada West-79-AC- iToC Voter Data.xlsx 81928
+51 Banaganapalle-140-AC- iToC Voter Data.xlsx 55841
+52 Tadepalligudem-62-AC- iToC Voter Data.xlsx 40107
+53 Avanigadda-76-AC- iToC Voter Data.xlsx 41089
+54 Kakinada City-41-AC- iToC Voter Data.xlsx 69267
+55 Gudivada-72-AC- iToC Voter Data.xlsx 60063
+56 Kovur-116-AC- iToC Voter Data.xlsx 32734
+57 Kovvur-54-AC- iToC Voter Data.xlsx 31196
+58 Kuppam-175-AC- iToC Voter Data.xlsx 41619
+59 Chintalapudi-68-AC- iToC Voter Data.xlsx 40414
+60 Gannavaram-71-AC- iToC Voter Data.xlsx 57625
+61 Ponnur-88-AC- iToC Voter Data.xlsx 47212
+62 Yemmiganur-144-AC- iToC Voter Data.xlsx 47140
+63 Tadipatri-151-AC- iToC Voter Data.xlsx 65010
+64 Tekkali-3-AC- iToC Voter Data.xlsx 48384
+65 Prathipadu (sc)-93-AC- iToC Voter Data.xlsx 50607
+66 Adoni-146-AC- iToC Voter Data.xlsx 39190
+67 Ongole-108-AC- iToC Voter Data.xlsx 74344
+68 Puthalapattu-173-AC- iToC Voter Data.xlsx 62367
+69 Tadikonda (sc)-86-AC- iToC Voter Data.xlsx 49227
+70 Nandikotkur-136-AC- iToC Voter Data.xlsx 36763
+71 Kadapa-126-AC- iToC Voter Data.xlsx 73377
+72 Etcherla-7-AC- iToC Voter Data.xlsx 33833
+73 Kandukur-109-AC- iToC Voter Data.xlsx 46561
+74 Undi-60-AC- iToC Voter Data.xlsx 37014
+75 Chilakaluripet-96-AC- iToC Voter Data.xlsx 53908
+76 Gopalapuram-66-AC- iToC Voter Data.xlsx 31166
+77 Tuni-35-AC- iToC Voter Data.xlsx 51603
+78 Bapatla-92-AC- iToC Voter Data.xlsx 30252
+79 Dhone-141-AC- iToC Voter Data.xlsx 48292
+80 Yerragondapalem-102-AC- iToC Voter Data.xlsx 35839
+81 Vijayawada East-81-AC- iToC Voter Data.xlsx 98541
+82 Rajahmundry City-50-AC- iToC Voter Data.xlsx 86137
+83 Achanta-56-AC- iToC Voter Data.xlsx 25881
+84 Rajampet-125-AC- iToC Voter Data.xlsx 53129
+85 Cheepurupalli-15-AC- iToC Voter Data.xlsx 31267
+86 Visakhapatnam North-23-AC- iToC Voter Data.xlsx 86747
+87 Unguturu-63-AC- iToC Voter Data.xlsx 20890
+88 Jaggayyapeta-84-AC- iToC Voter Data.xlsx 38431
+89 Badvel-124-AC- iToC Voter Data.xlsx 47959
+90 Jammalamadugu-131-AC- iToC Voter Data.xlsx 59401
+91 Gannavaram-46-AC- iToC Voter Data.xlsx 57447
+92 Kakinada Rural-38-AC- iToC Voter Data.xlsx 82911
+93 Tanuku-61-AC- iToC Voter Data.xlsx 47847
+94 Eluru-65-AC- iToC Voter Data.xlsx 68097
+95 Razole-45-AC- iToC Voter Data.xlsx 57042
+96 Chirala-106-AC- iToC Voter Data.xlsx 52324
+97 Venkatagiri-122-AC- iToC Voter Data.xlsx 36101
+98 Kurnool-137-AC- iToC Voter Data.xlsx 94109
+99 Parchur-104-AC- iToC Voter Data.xlsx 49886
+100 Punganur-165-AC- iToC Voter Data.xlsx 90081
+101 Mylavaram-82-AC- iToC Voter Data.xlsx 65018
+102 Palakonda-10-AC- iToC Voter Data.xlsx 31562
+103 Macherla-101-AC- iToC Voter Data.xlsx 32985
+104 Amalapuram-44-AC- iToC Voter Data.xlsx 46669
+105 Anakapalli-30-AC- iToC Voter Data.xlsx 57405
+106 Thamballapalle-162-AC- iToC Voter Data.xlsx 83139
+107 Ichapuram-1-AC- iToC Voter Data.xlsx 51478
+108 Kavali-114-AC- iToC Voter Data.xlsx 32021
+109 Proddatur-132-AC- iToC Voter Data.xlsx 68480
+110 Nandyal-139-AC- iToC Voter Data.xlsx 82210
+111 Srungavarapukota-19-AC- iToC Voter Data.xlsx 53356
+112 Rajam-9-AC- iToC Voter Data.xlsx 24473
+113 Raptadu-155-AC- iToC Voter Data.xlsx 43054
+114 Narsipatnam-34-AC- iToC Voter Data.xlsx 29770
+115 Sarvepalli-119-AC- iToC Voter Data.xlsx 33954
+116 Repalle-90-AC- iToC Voter Data.xlsx 37781
+117 Pattikonda-142-AC- iToC Voter Data.xlsx 53686
+118 Vizianagaram-18-AC- iToC Voter Data.xlsx 78160
+119 Jaggampeta-52-AC- iToC Voter Data.xlsx 36054
+120 Nellore Rural-118-AC- iToC Voter Data.xlsx 69798
+121 Gajapathinagaram-16-AC- iToC Voter Data.xlsx 21841
+122 Srikalahasti-168-AC- iToC Voter Data.xlsx 75130
+123 Penamaluru-78-AC- iToC Voter Data.xlsx 80806
+124 Tenali-91-AC- iToC Voter Data.xlsx 75297
+125 Palasa-2-AC- iToC Voter Data.xlsx 55691
+126 Puttaparthi-159-AC- iToC Voter Data.xlsx 47933
+127 Bhimli-20-AC- iToC Voter Data.xlsx 80203
+128 Guntur West-94-AC- iToC Voter Data.xlsx 92782
+129 Narasaraopet-97-AC- iToC Voter Data.xlsx 49375
+130 Pulivendla-129-AC- iToC Voter Data.xlsx 47239
+131 Santhanuthalapadu-107-AC- iToC Voter Data.xlsx 47115
+132 Hindupur-157-AC- iToC Voter Data.xlsx 68366
+133 VisakhapatnamWest-24-AC- iToC Voter Data.xlsx 79886
+134 Denduluru-64-AC- iToC Voter Data.xlsx 30145
+135 Udayagiri-123-AC- iToC Voter Data.xlsx 36947
+136 Mandapeta-48-AC- iToC Voter Data.xlsx 57112
+137 Uravakonda-149-AC- iToC Voter Data.xlsx 33140
+138 Pathapatnam-4-AC- iToC Voter Data.xlsx 47528
+139 Tiruvuru-69-AC- iToC Voter Data.xlsx 31352
+140 Kothapeta-47-AC- iToC Voter Data.xlsx 45838
+141 Nandigama-83-AC- iToC Voter Data.xlsx 36317
+142 Singanamala-152-AC- iToC Voter Data.xlsx 44273
+143 Addanki-105-AC- iToC Voter Data.xlsx 54952
+144 Darsi-103-AC- iToC Voter Data.xlsx 32715
+145 Visakhapatnam East-21-AC- iToC Voter Data.xlsx 80890
+146 Nellimarla-17-AC- iToC Voter Data.xlsx 31443
+147 Rajamundry Rural-51-AC- iToC Voter Data.xlsx 78943
+148 Narasapuram-58-AC- iToC Voter Data.xlsx 27820
+149 Payakaraopeta-33-AC- iToC Voter Data.xlsx 29006
+150 Pithapuram-37-AC- iToC Voter Data.xlsx 56825
+151 Polavaram-67-AC- iToC Voter Data.xlsx 26213
+152 Araku valley-28-AC- iToC Voter Data.xlsx 18005
+153 Kamalapuram-130-AC- iToC Voter Data.xlsx 37634
+154 Rajanagaram-49-AC- iToC Voter Data.xlsx 35893
+155 Gangadhara Nellore-171-AC- iToC Voter Data.xlsx 53716
+156 Visakhapatnam South-22-AC- iToC Voter Data.xlsx 70280
+157 Mydukur-133-AC- iToC Voter Data.xlsx 58200
+158 Prathipadu-36-AC- iToC Voter Data.xlsx 33722
+159 Amadalavalasa-6-AC- iToC Voter Data.xlsx 28444
+160 Elamanchili-32-AC- iToC Voter Data.xlsx 38426
+161 Dharmavaram-160-AC- iToC Voter Data.xlsx 68298
+162 Giddalur-112-AC- iToC Voter Data.xlsx 67420
+163 Kondapi-110-AC- iToC Voter Data.xlsx 56458
+164 Pedakurapadu-85-AC- iToC Voter Data.xlsx 38013
+165 Pileru-163-AC- iToC Voter Data.xlsx 68227
+166 Kodumur-143-AC- iToC Voter Data.xlsx 48886
+167 Parvathipuram-12-AC- iToC Voter Data.xlsx 36174
+168 Rampachodavaram-53-AC- iToC Voter Data.xlsx 28715
+169 Pamarru-77-AC- iToC Voter Data.xlsx 28937
+170 Vijayawada Central-80-AC- iToC Voter Data.xlsx 96016
+171 V.madugula-27-AC- iToC Voter Data.xlsx 19201
+172 Kurupam-11-AC- iToC Voter Data.xlsx 26776
+173 Satyavedu-169-AC- iToC Voter Data.xlsx 63002
+174 Vemuru (sc)-89-AC- iToC Voter Data.xlsx 29046
+175 Salur-13-AC- iToC Voter Data.xlsx 23140

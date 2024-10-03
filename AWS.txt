@@ -5,6 +5,12 @@ Account
 Application&Deploy
 server
 
-- Public community Private Hybrid
-- On personnel -Infrastructure as a service -Platform as a service -Software as a service
+- 1-Public 2-community 3-Private 4-Hybrid
+- 1-On_personnel 2-Infrastructure_as_a_service 3-Platform_as_a_service 4-Software_as_a_service
+
+Root
+IamUser
+
+
+
 
