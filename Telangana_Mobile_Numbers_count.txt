@@ -1,8 +1,8 @@
-1 Mahbubnagar-74-AC- iToC Voter Data.xlsx 67239
-2 Nalgonda-92-AC- iToC Voter Data.xlsx 62709
-3 Musheerabad-57-AC- iToC Voter Data.xlsx 75828
-4 Bhupalpalle-108-AC- iToC Voter Data.xlsx 53217
-5 Peddapalle-25-AC- iToC Voter Data.xlsx 40166
+1 Mahbubnagar 67239
+2 Nalgonda 62709
+3 Musheerabad 75828
+4 Bhupalpalle 53217
+5 Peddapalle 40166
 6 Warangal East-106-AC- iToC Voter Data.xlsx 67823
 7 Wyra-115-AC- iToC Voter Data.xlsx 41121
 8 Balkonda-19-AC- iToC Voter Data.xlsx 47590
