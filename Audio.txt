@@ -1,0 +1,30 @@
+sudo apt install ffmpeg
+ffmpeg -i file_name {changed file_name} (edited)
+
+React
+
+Reply
+
+3:05
+For more than 2 hrs
+
+ffmpeg -i videoplayback.mp4 -rf64 auto videoplayback.wav
+
+FOR TIMME CUTTING
+
+ffmpeg -ss 00:00:00 -to 04:52:14 -i video_output_part1.mp4 -c copy video_output_part1.mp4
+
+audacity
+
+sudo snap connect audacity:alsa
+
+ffmpeg -ss 04:52:14 -to 09:18:18 -i videoplayback.mp4 -c copy video_output_part2.mp4
+
+ffmpeg -i video_output_part2.mp4 -rf64 auto video_output_part2.wav
+
+
+
+mp4_wave file time cutting
+preprocessing
+test
+silence_adding
