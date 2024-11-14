@@ -1,0 +1,38 @@
+in laptop or pc download the required ubuntu version
+
+Go to chrome type ubuntu version number
+click on jammy jellyfish
+scrool up and click this below link
+ubuntu-22.04.5-desktop-amd64.iso	
+2024-09-11 14:38	4.4G	Desktop image for 64-bit PC (AMD64) computers (standard download)
+
+Download uui in widows (universal usb installer)
+
+then connect a pendrive to windows laptop or pc
+double click the uui
+yes
+select this file ubuntu-22.04.5-desktop-amd64.iso
+then ubuntu
+then pendrive location
+click yes and finish
+
+then flashing over
+
+connect the pendrive to the ubuntu required pc or laptop
+then power on the pc
+press f2 for boot options
+
+in boot option change the fast boot disable
+keep the downloded file in 1st boot place
+in windows option change to other os
+then save and exit
+
+then shutdown or press the F12 button to boot
+select the flashed ubuntu version package
+enter
+then try to install ubuntu
+Dont connect to any other wifi during setup
+after completion of setup click restart
+after sometime you will see the line remove the pendrive and click enter
+remove pendrive and click enter
+done.
