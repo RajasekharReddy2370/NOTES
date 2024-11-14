@@ -173,3 +173,539 @@
 173 Satyavedu-169-AC- iToC Voter Data.xlsx 63002
 174 Vemuru (sc)-89-AC- iToC Voter Data.xlsx 29046
 175 Salur-13-AC- iToC Voter Data.xlsx 23140
+
+
+/home/rajashekar/WORK/Environments/djangoenvironments/bin/python3.10 /home/rajashekar/WORK/Data_cleaning_by_pandas/Mobile_Number_count_from_state.py
+Vizianagaram - Name and Mobile Count: 131071
+Vizianagaram - Mobile Count: 78160
+Processed file 1/175: Vizianagaram-18-AC- iToC Voter Data.xlsx
+Vijayawada East - Name and Mobile Count: 146716
+Vijayawada East - Mobile Count: 98541
+Processed file 2/175: Vijayawada East-81-AC- iToC Voter Data.xlsx
+Pedana - Name and Mobile Count: 51434
+Pedana - Mobile Count: 33380
+Processed file 3/175: Pedana-74-AC- iToC Voter Data.xlsx
+Gangadhara Nellore - Name and Mobile Count: 90162
+Gangadhara Nellore - Mobile Count: 53716
+Processed file 4/175: Gangadhara Nellore-171-AC- iToC Voter Data.xlsx
+Pithapuram - Name and Mobile Count: 97912
+Pithapuram - Mobile Count: 56825
+Processed file 5/175: Pithapuram-37-AC- iToC Voter Data.xlsx
+Bapatla - Name and Mobile Count: 41518
+Bapatla - Mobile Count: 30252
+Processed file 6/175: Bapatla-92-AC- iToC Voter Data.xlsx
+Eluru - Name and Mobile Count: 102729
+Eluru - Mobile Count: 68097
+Processed file 7/175: Eluru-65-AC- iToC Voter Data.xlsx
+Punganur - Name and Mobile Count: 166009
+Punganur - Mobile Count: 90081
+Processed file 8/175: Punganur-165-AC- iToC Voter Data.xlsx
+Thamballapalle - Name and Mobile Count: 168699
+Thamballapalle - Mobile Count: 83139
+Processed file 9/175: Thamballapalle-162-AC- iToC Voter Data.xlsx
+Madanapalle - Name and Mobile Count: 133522
+Madanapalle - Mobile Count: 85112
+Processed file 10/175: Madanapalle-164-AC- iToC Voter Data.xlsx
+Salur - Name and Mobile Count: 39067
+Salur - Mobile Count: 23140
+Processed file 11/175: Salur-13-AC- iToC Voter Data.xlsx
+Kadapa - Name and Mobile Count: 144599
+Kadapa - Mobile Count: 73377
+Processed file 12/175: Kadapa-126-AC- iToC Voter Data.xlsx
+Repalle - Name and Mobile Count: 52061
+Repalle - Mobile Count: 37781
+Processed file 13/175: Repalle-90-AC- iToC Voter Data.xlsx
+Polavaram - Name and Mobile Count: 34986
+Polavaram - Mobile Count: 26213
+Processed file 14/175: Polavaram-67-AC- iToC Voter Data.xlsx
+Kakinada City - Name and Mobile Count: 104843
+Kakinada City - Mobile Count: 69267
+Processed file 15/175: Kakinada City-41-AC- iToC Voter Data.xlsx
+Proddatur - Name and Mobile Count: 111938
+Proddatur - Mobile Count: 68480
+Processed file 16/175: Proddatur-132-AC- iToC Voter Data.xlsx
+Prathipadu - Name and Mobile Count: 48833
+Prathipadu - Mobile Count: 33722
+Processed file 17/175: Prathipadu-36-AC- iToC Voter Data.xlsx
+Gannavaram - Name and Mobile Count: 82965
+Gannavaram - Mobile Count: 57447
+Processed file 18/175: Gannavaram-46-AC- iToC Voter Data.xlsx
+Pamarru - Name and Mobile Count: 36467
+Pamarru - Mobile Count: 28937
+Processed file 19/175: Pamarru-77-AC- iToC Voter Data.xlsx
+Vinukonda - Name and Mobile Count: 65172
+Vinukonda - Mobile Count: 43216
+Processed file 20/175: Vinukonda-99-AC- iToC Voter Data.xlsx
+Chilakaluripet - Name and Mobile Count: 78074
+Chilakaluripet - Mobile Count: 53908
+Processed file 21/175: Chilakaluripet-96-AC- iToC Voter Data.xlsx
+Panyam - Name and Mobile Count: 110321
+Panyam - Mobile Count: 73921
+Processed file 22/175: Panyam-138-AC- iToC Voter Data.xlsx
+Guntur West - Name and Mobile Count: 139390
+Guntur West - Mobile Count: 92782
+Processed file 23/175: Guntur West-94-AC- iToC Voter Data.xlsx
+Tadipatri - Name and Mobile Count: 113094
+Tadipatri - Mobile Count: 65010
+Processed file 24/175: Tadipatri-151-AC- iToC Voter Data.xlsx
+Srungavarapukota - Name and Mobile Count: 96653
+Srungavarapukota - Mobile Count: 53356
+Processed file 25/175: Srungavarapukota-19-AC- iToC Voter Data.xlsx
+Yerragondapalem - Name and Mobile Count: 52597
+Yerragondapalem - Mobile Count: 35839
+Processed file 26/175: Yerragondapalem-102-AC- iToC Voter Data.xlsx
+Rajampet - Name and Mobile Count: 75320
+Rajampet - Mobile Count: 53129
+Processed file 27/175: Rajampet-125-AC- iToC Voter Data.xlsx
+Anantapur Urban - Name and Mobile Count: 156015
+Anantapur Urban - Mobile Count: 97028
+Processed file 28/175: Anantapur Urban-153-AC- iToC Voter Data.xlsx
+Cheepurupalli - Name and Mobile Count: 51750
+Cheepurupalli - Mobile Count: 31267
+Processed file 29/175: Cheepurupalli-15-AC- iToC Voter Data.xlsx
+Mummidivaram - Name and Mobile Count: 101796
+Mummidivaram - Mobile Count: 58843
+Processed file 30/175: Mummidivaram-43-AC- iToC Voter Data.xlsx
+Ponnur - Name and Mobile Count: 71402
+Ponnur - Mobile Count: 47212
+Processed file 31/175: Ponnur-88-AC- iToC Voter Data.xlsx
+Alur - Name and Mobile Count: 40812
+Alur - Mobile Count: 27412
+Processed file 32/175: Alur-147-AC- iToC Voter Data.xlsx
+Santhanuthalapadu - Name and Mobile Count: 65334
+Santhanuthalapadu - Mobile Count: 47115
+Processed file 33/175: Santhanuthalapadu-107-AC- iToC Voter Data.xlsx
+Banaganapalle - Name and Mobile Count: 81728
+Banaganapalle - Mobile Count: 55841
+Processed file 34/175: Banaganapalle-140-AC- iToC Voter Data.xlsx
+Gudur - Name and Mobile Count: 64610
+Gudur - Mobile Count: 41917
+Processed file 35/175: Gudur-120-AC- iToC Voter Data.xlsx
+Udayagiri - Name and Mobile Count: 54887
+Udayagiri - Mobile Count: 36947
+Processed file 36/175: Udayagiri-123-AC- iToC Voter Data.xlsx
+Anaparthy - Name and Mobile Count: 93531
+Anaparthy - Mobile Count: 56407
+Processed file 37/175: Anaparthy-40-AC- iToC Voter Data.xlsx
+Bhimli - Name and Mobile Count: 122752
+Bhimli - Mobile Count: 80203
+Processed file 38/175: Bhimli-20-AC- iToC Voter Data.xlsx
+Kovvur - Name and Mobile Count: 42669
+Kovvur - Mobile Count: 31196
+Processed file 39/175: Kovvur-54-AC- iToC Voter Data.xlsx
+Nidadavole - Name and Mobile Count: 48955
+Nidadavole - Mobile Count: 35406
+Processed file 40/175: Nidadavole-55-AC- iToC Voter Data.xlsx
+Srikakulam - Name and Mobile Count: 88980
+Srikakulam - Mobile Count: 57684
+Processed file 41/175: Srikakulam-5-AC- iToC Voter Data.xlsx
+Puttaparthi - Name and Mobile Count: 73733
+Puttaparthi - Mobile Count: 47933
+Processed file 42/175: Puttaparthi-159-AC- iToC Voter Data.xlsx
+Etcherla - Name and Mobile Count: 55015
+Etcherla - Mobile Count: 33833
+Processed file 43/175: Etcherla-7-AC- iToC Voter Data.xlsx
+Chodavaram - Name and Mobile Count: 51928
+Chodavaram - Mobile Count: 33241
+Processed file 44/175: Chodavaram-26-AC- iToC Voter Data.xlsx
+Visakhapatnam North - Name and Mobile Count: 129214
+Visakhapatnam North - Mobile Count: 86747
+Processed file 45/175: Visakhapatnam North-23-AC- iToC Voter Data.xlsx
+Penamaluru - Name and Mobile Count: 118343
+Penamaluru - Mobile Count: 80806
+Processed file 46/175: Penamaluru-78-AC- iToC Voter Data.xlsx
+Gurazala - Name and Mobile Count: 78872
+Gurazala - Mobile Count: 50178
+Processed file 47/175: Gurazala-100-AC- iToC Voter Data.xlsx
+Raptadu - Name and Mobile Count: 67362
+Raptadu - Mobile Count: 43054
+Processed file 48/175: Raptadu-155-AC- iToC Voter Data.xlsx
+Avanigadda - Name and Mobile Count: 52944
+Avanigadda - Mobile Count: 41089
+Processed file 49/175: Avanigadda-76-AC- iToC Voter Data.xlsx
+Nuzvid - Name and Mobile Count: 51726
+Nuzvid - Mobile Count: 36166
+Processed file 50/175: Nuzvid-70-AC- iToC Voter Data.xlsx
+Vemuru (sc) - Name and Mobile Count: 34873
+Vemuru (sc) - Mobile Count: 29046
+Processed file 51/175: Vemuru (sc)-89-AC- iToC Voter Data.xlsx
+Kovur - Name and Mobile Count: 43450
+Kovur - Mobile Count: 32734
+Processed file 52/175: Kovur-116-AC- iToC Voter Data.xlsx
+Markapuram - Name and Mobile Count: 80167
+Markapuram - Mobile Count: 51518
+Processed file 53/175: Markapuram-111-AC- iToC Voter Data.xlsx
+Jaggampeta - Name and Mobile Count: 47804
+Jaggampeta - Mobile Count: 36054
+Processed file 54/175: Jaggampeta-52-AC- iToC Voter Data.xlsx
+Parchur - Name and Mobile Count: 68015
+Parchur - Mobile Count: 49886
+Processed file 55/175: Parchur-104-AC- iToC Voter Data.xlsx
+Puthalapattu - Name and Mobile Count: 106660
+Puthalapattu - Mobile Count: 62367
+Processed file 56/175: Puthalapattu-173-AC- iToC Voter Data.xlsx
+Jaggayyapeta - Name and Mobile Count: 62996
+Jaggayyapeta - Mobile Count: 38431
+Processed file 57/175: Jaggayyapeta-84-AC- iToC Voter Data.xlsx
+Rayachoti - Name and Mobile Count: 71364
+Rayachoti - Mobile Count: 50844
+Processed file 58/175: Rayachoti-128-AC- iToC Voter Data.xlsx
+Gajuwaka - Name and Mobile Count: 178240
+Gajuwaka - Mobile Count: 111784
+Processed file 59/175: Gajuwaka-25-AC- iToC Voter Data.xlsx
+Adoni - Name and Mobile Count: 60783
+Adoni - Mobile Count: 39190
+Processed file 60/175: Adoni-146-AC- iToC Voter Data.xlsx
+Nellore City - Name and Mobile Count: 117238
+Nellore City - Mobile Count: 71153
+Processed file 61/175: Nellore City-117-AC- iToC Voter Data.xlsx
+Sarvepalli - Name and Mobile Count: 51840
+Sarvepalli - Mobile Count: 33954
+Processed file 62/175: Sarvepalli-119-AC- iToC Voter Data.xlsx
+Palamaner - Name and Mobile Count: 98545
+Palamaner - Mobile Count: 66512
+Processed file 63/175: Palamaner-174-AC- iToC Voter Data.xlsx
+Nellimarla - Name and Mobile Count: 52574
+Nellimarla - Mobile Count: 31443
+Processed file 64/175: Nellimarla-17-AC- iToC Voter Data.xlsx
+Kavali - Name and Mobile Count: 50536
+Kavali - Mobile Count: 32021
+Processed file 65/175: Kavali-114-AC- iToC Voter Data.xlsx
+Kondapi - Name and Mobile Count: 86932
+Kondapi - Mobile Count: 56458
+Processed file 66/175: Kondapi-110-AC- iToC Voter Data.xlsx
+Pathapatnam - Name and Mobile Count: 75859
+Pathapatnam - Mobile Count: 47528
+Processed file 67/175: Pathapatnam-4-AC- iToC Voter Data.xlsx
+Nandyal - Name and Mobile Count: 127463
+Nandyal - Mobile Count: 82210
+Processed file 68/175: Nandyal-139-AC- iToC Voter Data.xlsx
+Bhimavaram - Name and Mobile Count: 99052
+Bhimavaram - Mobile Count: 65673
+Processed file 69/175: Bhimavaram-59-AC- iToC Voter Data.xlsx
+Srikalahasti - Name and Mobile Count: 126650
+Srikalahasti - Mobile Count: 75130
+Processed file 70/175: Srikalahasti-168-AC- iToC Voter Data.xlsx
+Tanuku - Name and Mobile Count: 68338
+Tanuku - Mobile Count: 47847
+Processed file 71/175: Tanuku-61-AC- iToC Voter Data.xlsx
+Vijayawada Central - Name and Mobile Count: 139732
+Vijayawada Central - Mobile Count: 96016
+Processed file 72/175: Vijayawada Central-80-AC- iToC Voter Data.xlsx
+Srisailam - Name and Mobile Count: 55644
+Srisailam - Mobile Count: 37047
+Processed file 73/175: Srisailam-135-AC- iToC Voter Data.xlsx
+Ichapuram - Name and Mobile Count: 79136
+Ichapuram - Mobile Count: 51478
+Processed file 74/175: Ichapuram-1-AC- iToC Voter Data.xlsx
+Sattenapalli - Name and Mobile Count: 68364
+Sattenapalli - Mobile Count: 44354
+Processed file 75/175: Sattenapalli-98-AC- iToC Voter Data.xlsx
+Chandragiri - Name and Mobile Count: 139661
+Chandragiri - Mobile Count: 89755
+Processed file 76/175: Chandragiri-166-AC- iToC Voter Data.xlsx
+Darsi - Name and Mobile Count: 44025
+Darsi - Mobile Count: 32715
+Processed file 77/175: Darsi-103-AC- iToC Voter Data.xlsx
+Kuppam - Name and Mobile Count: 55421
+Kuppam - Mobile Count: 41619
+Processed file 78/175: Kuppam-175-AC- iToC Voter Data.xlsx
+Gannavaram - Name and Mobile Count: 75171
+Gannavaram - Mobile Count: 57625
+Processed file 79/175: Gannavaram-71-AC- iToC Voter Data.xlsx
+Singanamala - Name and Mobile Count: 69057
+Singanamala - Mobile Count: 44273
+Processed file 80/175: Singanamala-152-AC- iToC Voter Data.xlsx
+Rajanagaram - Name and Mobile Count: 45156
+Rajanagaram - Mobile Count: 35893
+Processed file 81/175: Rajanagaram-49-AC- iToC Voter Data.xlsx
+Sullurpeta - Name and Mobile Count: 63197
+Sullurpeta - Mobile Count: 41785
+Processed file 82/175: Sullurpeta-121-AC- iToC Voter Data.xlsx
+Macherla - Name and Mobile Count: 44173
+Macherla - Mobile Count: 32985
+Processed file 83/175: Macherla-101-AC- iToC Voter Data.xlsx
+Kodur - Name and Mobile Count: 57225
+Kodur - Mobile Count: 41086
+Processed file 84/175: Kodur-127-AC- iToC Voter Data.xlsx
+Chintalapudi - Name and Mobile Count: 57261
+Chintalapudi - Mobile Count: 40414
+Processed file 85/175: Chintalapudi-68-AC- iToC Voter Data.xlsx
+Amalapuram - Name and Mobile Count: 71696
+Amalapuram - Mobile Count: 46669
+Processed file 86/175: Amalapuram-44-AC- iToC Voter Data.xlsx
+Chittoor - Name and Mobile Count: 115901
+Chittoor - Mobile Count: 71895
+Processed file 87/175: Chittoor-172-AC- iToC Voter Data.xlsx
+Visakhapatnam East - Name and Mobile Count: 118035
+Visakhapatnam East - Mobile Count: 80890
+Processed file 88/175: Visakhapatnam East-21-AC- iToC Voter Data.xlsx
+Undi - Name and Mobile Count: 45709
+Undi - Mobile Count: 37014
+Processed file 89/175: Undi-60-AC- iToC Voter Data.xlsx
+Tadikonda (sc) - Name and Mobile Count: 80648
+Tadikonda (sc) - Mobile Count: 49227
+Processed file 90/175: Tadikonda (sc)-86-AC- iToC Voter Data.xlsx
+Vijaywada West - Name and Mobile Count: 120158
+Vijaywada West - Mobile Count: 81928
+Processed file 91/175: Vijaywada West-79-AC- iToC Voter Data.xlsx
+Allagadda - Name and Mobile Count: 55172
+Allagadda - Mobile Count: 41330
+Processed file 92/175: Allagadda-134-AC- iToC Voter Data.xlsx
+Jammalamadugu - Name and Mobile Count: 96569
+Jammalamadugu - Mobile Count: 59401
+Processed file 93/175: Jammalamadugu-131-AC- iToC Voter Data.xlsx
+Elamanchili - Name and Mobile Count: 62797
+Elamanchili - Mobile Count: 38426
+Processed file 94/175: Elamanchili-32-AC- iToC Voter Data.xlsx
+Araku valley - Name and Mobile Count: 31141
+Araku valley - Mobile Count: 18005
+Processed file 95/175: Araku valley-28-AC- iToC Voter Data.xlsx
+Kadiri - Name and Mobile Count: 93149
+Kadiri - Mobile Count: 60647
+Processed file 96/175: Kadiri-161-AC- iToC Voter Data.xlsx
+Payakaraopeta - Name and Mobile Count: 38750
+Payakaraopeta - Mobile Count: 29006
+Processed file 97/175: Payakaraopeta-33-AC- iToC Voter Data.xlsx
+Giddalur - Name and Mobile Count: 102101
+Giddalur - Mobile Count: 67420
+Processed file 98/175: Giddalur-112-AC- iToC Voter Data.xlsx
+Palakonda - Name and Mobile Count: 51831
+Palakonda - Mobile Count: 31562
+Processed file 99/175: Palakonda-10-AC- iToC Voter Data.xlsx
+Nandigama - Name and Mobile Count: 55456
+Nandigama - Mobile Count: 36317
+Processed file 100/175: Nandigama-83-AC- iToC Voter Data.xlsx
+Chirala - Name and Mobile Count: 81989
+Chirala - Mobile Count: 52324
+Processed file 101/175: Chirala-106-AC- iToC Voter Data.xlsx
+Kanigiri - Name and Mobile Count: 62506
+Kanigiri - Mobile Count: 40006
+Processed file 102/175: Kanigiri-113-AC- iToC Voter Data.xlsx
+Dhone - Name and Mobile Count: 72605
+Dhone - Mobile Count: 48292
+Processed file 103/175: Dhone-141-AC- iToC Voter Data.xlsx
+Tekkali - Name and Mobile Count: 73110
+Tekkali - Mobile Count: 48384
+Processed file 104/175: Tekkali-3-AC- iToC Voter Data.xlsx
+Kodumur - Name and Mobile Count: 65188
+Kodumur - Mobile Count: 48886
+Processed file 105/175: Kodumur-143-AC- iToC Voter Data.xlsx
+Uravakonda - Name and Mobile Count: 53330
+Uravakonda - Mobile Count: 33140
+Processed file 106/175: Uravakonda-149-AC- iToC Voter Data.xlsx
+Tirupati - Name and Mobile Count: 213714
+Tirupati - Mobile Count: 135192
+Processed file 107/175: Tirupati-167-AC- iToC Voter Data.xlsx
+Venkatagiri - Name and Mobile Count: 54749
+Venkatagiri - Mobile Count: 36101
+Processed file 108/175: Venkatagiri-122-AC- iToC Voter Data.xlsx
+Rajam - Name and Mobile Count: 40172
+Rajam - Mobile Count: 24473
+Processed file 109/175: Rajam-9-AC- iToC Voter Data.xlsx
+Palasa - Name and Mobile Count: 92550
+Palasa - Mobile Count: 55691
+Processed file 110/175: Palasa-2-AC- iToC Voter Data.xlsx
+Pendurthi - Name and Mobile Count: 129870
+Pendurthi - Mobile Count: 83229
+Processed file 111/175: Pendurthi-31-AC- iToC Voter Data.xlsx
+Palacole - Name and Mobile Count: 50640
+Palacole - Mobile Count: 36681
+Processed file 112/175: Palacole-57-AC- iToC Voter Data.xlsx
+Guntur East - Name and Mobile Count: 152629
+Guntur East - Mobile Count: 93840
+Processed file 113/175: Guntur East-95-AC- iToC Voter Data.xlsx
+Rajamundry Rural - Name and Mobile Count: 134319
+Rajamundry Rural - Mobile Count: 78943
+Processed file 114/175: Rajamundry Rural-51-AC- iToC Voter Data.xlsx
+Tadepalligudem - Name and Mobile Count: 57532
+Tadepalligudem - Mobile Count: 40107
+Processed file 115/175: Tadepalligudem-62-AC- iToC Voter Data.xlsx
+Penukonda - Name and Mobile Count: 59152
+Penukonda - Mobile Count: 39852
+Processed file 116/175: Penukonda-158-AC- iToC Voter Data.xlsx
+Rajahmundry City - Name and Mobile Count: 127537
+Rajahmundry City - Mobile Count: 86137
+Processed file 117/175: Rajahmundry City-50-AC- iToC Voter Data.xlsx
+Mantralayam - Name and Mobile Count: 26822
+Mantralayam - Mobile Count: 15632
+Processed file 118/175: Mantralayam-145-AC- iToC Voter Data.xlsx
+Tuni - Name and Mobile Count: 98010
+Tuni - Mobile Count: 51603
+Processed file 119/175: Tuni-35-AC- iToC Voter Data.xlsx
+Kurnool - Name and Mobile Count: 149567
+Kurnool - Mobile Count: 94109
+Processed file 120/175: Kurnool-137-AC- iToC Voter Data.xlsx
+Mylavaram - Name and Mobile Count: 89194
+Mylavaram - Mobile Count: 65018
+Processed file 121/175: Mylavaram-82-AC- iToC Voter Data.xlsx
+Bobbili - Name and Mobile Count: 60760
+Bobbili - Mobile Count: 36729
+Processed file 122/175: Bobbili-14-AC- iToC Voter Data.xlsx
+Ongole - Name and Mobile Count: 126412
+Ongole - Mobile Count: 74344
+Processed file 123/175: Ongole-108-AC- iToC Voter Data.xlsx
+Visakhapatnam South - Name and Mobile Count: 106233
+Visakhapatnam South - Mobile Count: 70280
+Processed file 124/175: Visakhapatnam South-22-AC- iToC Voter Data.xlsx
+Mydukur - Name and Mobile Count: 106443
+Mydukur - Mobile Count: 58200
+Processed file 125/175: Mydukur-133-AC- iToC Voter Data.xlsx
+Kurupam - Name and Mobile Count: 40930
+Kurupam - Mobile Count: 26776
+Processed file 126/175: Kurupam-11-AC- iToC Voter Data.xlsx
+Kothapeta - Name and Mobile Count: 61358
+Kothapeta - Mobile Count: 45838
+Processed file 127/175: Kothapeta-47-AC- iToC Voter Data.xlsx
+Narasapuram - Name and Mobile Count: 38661
+Narasapuram - Mobile Count: 27820
+Processed file 128/175: Narasapuram-58-AC- iToC Voter Data.xlsx
+Kalyandurg - Name and Mobile Count: 54492
+Kalyandurg - Mobile Count: 37381
+Processed file 129/175: Kalyandurg-154-AC- iToC Voter Data.xlsx
+Satyavedu - Name and Mobile Count: 116427
+Satyavedu - Mobile Count: 63002
+Processed file 130/175: Satyavedu-169-AC- iToC Voter Data.xlsx
+Prathipadu (sc) - Name and Mobile Count: 69883
+Prathipadu (sc) - Mobile Count: 50607
+Processed file 131/175: Prathipadu (sc)-93-AC- iToC Voter Data.xlsx
+Yemmiganur - Name and Mobile Count: 85902
+Yemmiganur - Mobile Count: 47140
+Processed file 132/175: Yemmiganur-144-AC- iToC Voter Data.xlsx
+Pulivendla - Name and Mobile Count: 67087
+Pulivendla - Mobile Count: 47239
+Processed file 133/175: Pulivendla-129-AC- iToC Voter Data.xlsx
+Kamalapuram - Name and Mobile Count: 52578
+Kamalapuram - Mobile Count: 37634
+Processed file 134/175: Kamalapuram-130-AC- iToC Voter Data.xlsx
+Kakinada Rural - Name and Mobile Count: 137350
+Kakinada Rural - Mobile Count: 82911
+Processed file 135/175: Kakinada Rural-38-AC- iToC Voter Data.xlsx
+Gajapathinagaram - Name and Mobile Count: 31123
+Gajapathinagaram - Mobile Count: 21841
+Processed file 136/175: Gajapathinagaram-16-AC- iToC Voter Data.xlsx
+Nandikotkur - Name and Mobile Count: 54803
+Nandikotkur - Mobile Count: 36763
+Processed file 137/175: Nandikotkur-136-AC- iToC Voter Data.xlsx
+Pedakurapadu - Name and Mobile Count: 57056
+Pedakurapadu - Mobile Count: 38013
+Processed file 138/175: Pedakurapadu-85-AC- iToC Voter Data.xlsx
+Madakasira - Name and Mobile Count: 53245
+Madakasira - Mobile Count: 31661
+Processed file 139/175: Madakasira-156-AC- iToC Voter Data.xlsx
+Gudivada - Name and Mobile Count: 106288
+Gudivada - Mobile Count: 60063
+Processed file 140/175: Gudivada-72-AC- iToC Voter Data.xlsx
+Nagari - Name and Mobile Count: 74235
+Nagari - Mobile Count: 46415
+Processed file 141/175: Nagari-170-AC- iToC Voter Data.xlsx
+Hindupur - Name and Mobile Count: 109643
+Hindupur - Mobile Count: 68366
+Processed file 142/175: Hindupur-157-AC- iToC Voter Data.xlsx
+Ramachandrapuram - Name and Mobile Count: 66240
+Ramachandrapuram - Mobile Count: 42865
+Processed file 143/175: Ramachandrapuram-42-AC- iToC Voter Data.xlsx
+Guntakal - Name and Mobile Count: 137532
+Guntakal - Mobile Count: 80103
+Processed file 144/175: Guntakal-150-AC- iToC Voter Data.xlsx
+Narsipatnam - Name and Mobile Count: 44134
+Narsipatnam - Mobile Count: 29770
+Processed file 145/175: Narsipatnam-34-AC- iToC Voter Data.xlsx
+Machilipatnam - Name and Mobile Count: 83626
+Machilipatnam - Mobile Count: 50163
+Processed file 146/175: Machilipatnam-75-AC- iToC Voter Data.xlsx
+Rayadurg - Name and Mobile Count: 78839
+Rayadurg - Mobile Count: 48557
+Processed file 147/175: Rayadurg-148-AC- iToC Voter Data.xlsx
+Badvel - Name and Mobile Count: 71380
+Badvel - Mobile Count: 47959
+Processed file 148/175: Badvel-124-AC- iToC Voter Data.xlsx
+Peddapuram - Name and Mobile Count: 77763
+Peddapuram - Mobile Count: 51602
+Processed file 149/175: Peddapuram-39-AC- iToC Voter Data.xlsx
+Pileru - Name and Mobile Count: 104050
+Pileru - Mobile Count: 68227
+Processed file 150/175: Pileru-163-AC- iToC Voter Data.xlsx
+Paderu - Name and Mobile Count: 32627
+Paderu - Mobile Count: 19196
+Processed file 151/175: Paderu-29-AC- iToC Voter Data.xlsx
+Amadalavalasa - Name and Mobile Count: 48010
+Amadalavalasa - Mobile Count: 28444
+Processed file 152/175: Amadalavalasa-6-AC- iToC Voter Data.xlsx
+Atmakur - Name and Mobile Count: 31556
+Atmakur - Mobile Count: 22913
+Processed file 153/175: Atmakur-115-AC- iToC Voter Data.xlsx
+Rampachodavaram - Name and Mobile Count: 43724
+Rampachodavaram - Mobile Count: 28715
+Processed file 154/175: Rampachodavaram-53-AC- iToC Voter Data.xlsx
+Achanta - Name and Mobile Count: 31591
+Achanta - Mobile Count: 25881
+Processed file 155/175: Achanta-56-AC- iToC Voter Data.xlsx
+Pattikonda - Name and Mobile Count: 109724
+Pattikonda - Mobile Count: 53686
+Processed file 156/175: Pattikonda-142-AC- iToC Voter Data.xlsx
+Denduluru - Name and Mobile Count: 39125
+Denduluru - Mobile Count: 30145
+Processed file 157/175: Denduluru-64-AC- iToC Voter Data.xlsx
+Unguturu - Name and Mobile Count: 25065
+Unguturu - Mobile Count: 20890
+Processed file 158/175: Unguturu-63-AC- iToC Voter Data.xlsx
+Anakapalli - Name and Mobile Count: 83475
+Anakapalli - Mobile Count: 57405
+Processed file 159/175: Anakapalli-30-AC- iToC Voter Data.xlsx
+VisakhapatnamWest - Name and Mobile Count: 114983
+VisakhapatnamWest - Mobile Count: 79886
+Processed file 160/175: VisakhapatnamWest-24-AC- iToC Voter Data.xlsx
+Addanki - Name and Mobile Count: 83384
+Addanki - Mobile Count: 54952
+Processed file 161/175: Addanki-105-AC- iToC Voter Data.xlsx
+Narasannepta - Name and Mobile Count: 66607
+Narasannepta - Mobile Count: 41000
+Processed file 162/175: Narasannepta-8-AC- iToC Voter Data.xlsx
+V.madugula - Name and Mobile Count: 24522
+V.madugula - Mobile Count: 19201
+Processed file 163/175: V.madugula-27-AC- iToC Voter Data.xlsx
+Nellore Rural - Name and Mobile Count: 115777
+Nellore Rural - Mobile Count: 69798
+Processed file 164/175: Nellore Rural-118-AC- iToC Voter Data.xlsx
+Parvathipuram - Name and Mobile Count: 60854
+Parvathipuram - Mobile Count: 36174
+Processed file 165/175: Parvathipuram-12-AC- iToC Voter Data.xlsx
+Kandukur - Name and Mobile Count: 78871
+Kandukur - Mobile Count: 46561
+Processed file 166/175: Kandukur-109-AC- iToC Voter Data.xlsx
+Mandapeta - Name and Mobile Count: 84820
+Mandapeta - Mobile Count: 57112
+Processed file 167/175: Mandapeta-48-AC- iToC Voter Data.xlsx
+Tenali - Name and Mobile Count: 115162
+Tenali - Mobile Count: 75297
+Processed file 168/175: Tenali-91-AC- iToC Voter Data.xlsx
+Kaikalur - Name and Mobile Count: 83410
+Kaikalur - Mobile Count: 46273
+Processed file 169/175: Kaikalur-73-AC- iToC Voter Data.xlsx
+Dharmavaram - Name and Mobile Count: 120829
+Dharmavaram - Mobile Count: 68298
+Processed file 170/175: Dharmavaram-160-AC- iToC Voter Data.xlsx
+Mangalagiri - Name and Mobile Count: 110351
+Mangalagiri - Mobile Count: 77393
+Processed file 171/175: Mangalagiri-87-AC- iToC Voter Data.xlsx
+Tiruvuru - Name and Mobile Count: 44531
+Tiruvuru - Mobile Count: 31352
+Processed file 172/175: Tiruvuru-69-AC- iToC Voter Data.xlsx
+Gopalapuram - Name and Mobile Count: 40420
+Gopalapuram - Mobile Count: 31166
+Processed file 173/175: Gopalapuram-66-AC- iToC Voter Data.xlsx
+Razole - Name and Mobile Count: 73145
+Razole - Mobile Count: 57042
+Processed file 174/175: Razole-45-AC- iToC Voter Data.xlsx
+Narasaraopet - Name and Mobile Count: 75154
+Narasaraopet - Mobile Count: 49375
+Processed file 175/175: Narasaraopet-97-AC- iToC Voter Data.xlsx
+Overall State WITH DUPLICATES - Name and Mobile: 14019600
+Overall State WITH DUPLICATES - Mobile: 9036982
+Overall State WITHOUT DUPLICATES - Name and Mobile: 13995136
+Overall State WITHOUT DUPLICATES - Mobile: 8841317
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTt 3809.752521276474
+Data processing completed successfully.
+
+Process finished with exit code 0

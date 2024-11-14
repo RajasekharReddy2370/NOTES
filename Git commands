@@ -19,6 +19,8 @@ git password : TOKEN
  git remote add origin https://github.com/c360-voice/aivoice.git
  
   git pull origin master
+
+  git push -u origin master
 ################################################################TOKEN GENERATION########################################################################
 
 1.Git profile
