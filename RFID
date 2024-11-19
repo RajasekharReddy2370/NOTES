@@ -1,0 +1,50 @@
+connect the cable to the devices
+open laptop
+9989
+in Desktop click RFID
+connect the near by device
+How to know whether it is connected or not(Green light will on if it is connected in RFID)
+in Desktop also you would see connected
+                                           
+then click on the ip addredss of RFID starting with 16....
+
+password is change
+                                           
+in LLRP connections   disconnect it
+                                           
+open the python RFID
+Activate the environment ./venv/calls/Scripts/activate this will activate the environment
+                                           
+cd Rfid(Projectfolder NAME)
+                                           
+daphne -p 8001 RfidScanner.asgi:application
+
+open the vscode                                           
+npm start
+                                           
+it will open development server 
+open the server
+click the startbutton
+it establishes the connection between frontend and backend 
+and it also establishes the connection between the RFID
+
+The RFID continuously pushes the data from the barcodes to the backend the backend pushes the data to frontend
+tag list it will show the unique tags
+tag count or tag scan it will show how many times the tags are scanned
+to disconnect
+open the python add another terminal
+remove the first terminal
+
+open vs code cntrl+c 
+
+there are 4 blocks in the tag   
+                                           
+EPC NO
+it is different for each tag 
+this block contains the information about the product
+
+                                           
+
+
+
+                                           
