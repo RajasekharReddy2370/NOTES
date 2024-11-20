@@ -51,6 +51,10 @@ update the asgi.py file
 run the migrations
 
 
+the consumers.py is like the views.py file
+the routing.py is like the urls.py file
+
+
 https://www.youtube.com/watch?v=m5WUPHRgdOA&list=PLKcvQn8OTDUbRpJxRVjZ81nA4LjLokuFn
 https://channels.readthedocs.io/en/latest/tutorial/part_1.html
 
