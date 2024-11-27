@@ -1,1 +1,50 @@
 https://www.youtube.com/watch?v=JKlOlDFwsao
+
+import boto3
+import paandas as pd
+
+# 1. ####################### FOR ACCESSING S3 BUCKET IN AWS ############################
+
+s3 = boto3.resource(
+      service_name = 'S3',
+      region_name = "region",
+      aws_access_key_id = ".......",
+      aws_secret_access_key = "....."
+)
+
+
+for bucket in s3.buckets.all():
+  print(bucket.name)
+
+raja [think this is one of a bucket name]
+
+# 2. ####################### CREATING TWO FILES IN THE LOCAL TO UPLOAD TO AWS S3 ########
+
+foo = pd.DataFrame({'x':[1,2,3], 'y':['a','b','c']})
+bar = pd.DataFrame({'x':[10,20,30], 'y':['aa','bb','cc']})
+
+foo.to_csv('foo.csv')
+bar.to_csv('bar.csv')
+
+# 3. ####################### FOR UPLOADING FILES INTO AWS BUCKET ########################
+
+s3.Bucket('raja').upload_file(Filename='foo.csv',key='foo.csv')
+s3.Bucket('raja').upload_file(Filename='bar.csv',key='bar.csv')
+
+# 4. ####################### FOR DOWNLOADING FILES FROM THE AWS BUCKET ########################
+
+s3.Bucket('raja').download_file(Filename='foo1.csv',key='foo.csv') [The key should be filename in AWS s3 bucket the Filename is yourwish with which name you want to download the file]
+s3.Bucket('raja').download_file(Filename='bar1.csv',key='bar.csv')
+
+# 5. #################### TO SEE THE FILES IN PARTICULAR BUCKET ########################
+for obj in s3.Bucket('raja').objects.all():
+  print(obj)
+
+# 5. ################### TO LOAD THE DATA FROM THE AWS ###############################
+obj = s3.Bucket('raja').Object('foo.csv').get()
+foo = pd.read_csv(obj['Body'], index_col = 0)
+print(type(foo))
+
+print(foo)
+
+
