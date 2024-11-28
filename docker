@@ -1,0 +1,5 @@
+docker commands
+docker
+docker images [to see images]
+docker ps -a  [to see the  containers]
+docker ps     [to see running containers]
