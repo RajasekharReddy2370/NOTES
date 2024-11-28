@@ -16,7 +16,10 @@ docker image ls [to see all the images]
 docker ps -a  [to see the  containers]
 docker ps     [to see running containers]
 docker rmi imagename [to remove images]
+
 docker create imageid or imagename [to create container]
+docker create --name NAME imagename [to create container by yourname "in NAME place"]
+
 docker start containerid or containername [to start container]
 docker stop containerid or containername [to stop container]
 
