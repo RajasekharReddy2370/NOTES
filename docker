@@ -23,6 +23,8 @@ docker create --name NAME imagename [to create container by yourname "in NAME pl
 docker start containerid or containername [to start container]
 docker stop containerid or containername [to stop container]
 
+docker rm containername or containerid [to remove a container or image]
+
 docker exec -it containerid /bin/bash [to enter the terminal of the container]
 
 ls -ltr [to see list]
