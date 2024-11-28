@@ -1,1 +1,32 @@
 
+IN APPLICATION
+
+ymdp
+paste the youtube url links
+
+ymdpdata
+youtube link urls audio saved as wav format
+
+audio
+we need to paste the text of the sentence then it will give the speaker audio
+
+checkpoints (Best voices of the speaker)
+
+voice
+the cutting clips are uploaded to check the samplerate,channels and other parameters
+
+working Background
+
+select the speaker url links in youtube or any other social media
+ymdp
+paste the url links in All_vedio_links.txt file
+then run the ymdp.py file
+then the downloaded audio files(Wav) are stored in the sterio_downloads folder in speaker folder
+Later denoising step begins
+After denoising the enhanced wav files are send for clip cutting (to remove extra spaces to remove other voices)
+
+then the clips are used to generate the text based on the language(telugu, hindi etc)
+
+then trainig occurs based on the voice and text(inference training)
+
+
