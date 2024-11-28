@@ -12,3 +12,10 @@ docker rmi imagename [to remove images]
 docker create imageid [to create container]
 docker start containerid [to start container]
 docker exec -it containerid /bin/bash [to stop container]
+
+ls -ltr [to see list]
+touch newfile.txt [to create file]
+ls -ltr
+echo "This file is a test file" >> newfile.txt   [to give matter into the file]
+cat newfile.txt [shows the matter in newfile.txt]
+
