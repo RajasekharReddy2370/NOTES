@@ -1,3 +1,8 @@
+Docker [Main platform]
+images [dependencies or kibraries opr packages or environments]
+container [ A live, running instance of an image, where the application runs ]
+
+
 docker commands
 docker
 docker images [to see images]
@@ -5,4 +10,4 @@ docker ps -a  [to see the  containers]
 docker ps     [to see running containers]
 docker rmi imagename [to remove images]
 docker create imageid [to create container]
-docker start containername [to start container]
+docker start containerid [to start container]
