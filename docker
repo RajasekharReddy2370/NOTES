@@ -29,7 +29,7 @@ docker kill containername [forcefully to kill the container]
 
 docker rm containername or containerid [to remove a container or image]
 
-docker exec -it containerid /bin/bash [to enter the terminal of the container]
+docker exec -it containerid /bin/bash [to enter the terminal of the container we need to give shell name]
 
 ls -ltr [to see list]
 touch newfile.txt [to create file]
