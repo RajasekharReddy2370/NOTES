@@ -4,13 +4,22 @@ container [ A live, running instance of an image, where the application runs ]
 
 
 docker commands
-docker
+
+docker --version
+docker login
+docker logout
+docker search imagename
+docker pull imagename  [to install images in docker]
+docker inspect image imagename [About all the information image]
 docker images [to see images]
+docker image ls [to see all the images]
 docker ps -a  [to see the  containers]
 docker ps     [to see running containers]
 docker rmi imagename [to remove images]
-docker create imageid [to create container]
-docker start containerid [to start container]
+docker create imageid or imagename [to create container]
+docker start containerid or containername [to start container]
+docker stop containerid or containername [to stop container]
+
 docker exec -it containerid /bin/bash [to enter the terminal of the container]
 
 ls -ltr [to see list]
