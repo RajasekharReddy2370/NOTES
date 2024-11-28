@@ -25,6 +25,7 @@ docker run -d --name NAME imagename [it create container by yourname "in NAME pl
 
 docker start containerid or containername [to start container]
 docker stop containerid or containername [to stop container]
+docker kill containername [forcefully to kill the container]
 
 docker rm containername or containerid [to remove a container or image]
 
