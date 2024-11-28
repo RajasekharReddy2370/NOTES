@@ -11,7 +11,7 @@ docker ps     [to see running containers]
 docker rmi imagename [to remove images]
 docker create imageid [to create container]
 docker start containerid [to start container]
-docker exec -it containerid /bin/bash [to stop container]
+docker exec -it containerid /bin/bash [to enter the terminal of the container]
 
 ls -ltr [to see list]
 touch newfile.txt [to create file]
