@@ -40,3 +40,7 @@ ls -ltr
 echo "This file is a test file" >> newfile.txt   [to give matter into the file]
 cat newfile.txt [shows the matter in newfile.txt]
 
+To build image
+create a docker file
+docker build -t username/newimagename
+
