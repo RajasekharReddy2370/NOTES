@@ -2,6 +2,10 @@ Docker [Main platform]
 images [dependencies or kibraries opr packages or environments]
 container [ A live, running instance of an image, where the application runs ]
 
+raja   {image}
+sekhar {container}
+reddy  {volume}
+test   {filename}
 
 docker commands
 
