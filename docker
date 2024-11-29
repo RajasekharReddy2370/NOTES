@@ -49,7 +49,10 @@ create a docker file
 docker build -t username/newimagename
 
 ################### DOCKER VOLUMES #############################
-docker volume ls
-docker volume create VOLUMENAME
-docker volume ls
-docker run -it --name=CONTAINERNAME  --mount source=VOLUMENAME,destination=/data centos [mounting the volume to container in a data folder]
+docker volume create reddy    [Create a Docker Volume]
+docker run -d --name sekhar -v reddy:/data raja    [Run a Container with the Volume Attached]
+docker exec -it sekhar bash   [To access the container’s shell]
+cd /data       [Once inside the container, navigate to the /data directory]
+touch test.txt     [create the test file]
+echo "This file is a test file" >> test.txt   [to give matter into the file]
+cat test.txt [shows the matter in newfile.txt]
