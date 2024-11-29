@@ -56,3 +56,6 @@ cd /data       [Once inside the container, navigate to the /data directory]
 touch test.txt     [create the test file]
 echo "This file is a test file" >> test.txt   [to give matter into the file]
 cat test.txt [shows the matter in newfile.txt]
+
+
+docker run -it --volumes-from CONTAINER1 --name NEWCONTAINER OR CONTAINER2 IMAGENAME bash [To use the volume by another container]
