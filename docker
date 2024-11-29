@@ -21,6 +21,8 @@ docker create imageid or imagename [to create container]
 docker create --name NAME imagename [to create container by yourname "in NAME place"]
 docker run --name NAME imagename [it create container by yourname "in NAME place" and starts the container]
 docker run -d --name NAME imagename [it create container by yourname "in NAME place" and starts the container and detatch from the container]
+docker run -d --name NAME -p 8080:80 imagename [it create container by yourname "in NAME place" and starts the container and detatch from the container and run in the 8080 port]
+
 
 
 docker start containerid or containername [to start container]
