@@ -1,0 +1,64 @@
+[cntrl+Alt+F3 to enter]
+[cntrl+Alt+F1 to exit]
+
+
+flash the ubuntu and install
+
+https://gist.github.com/muhammadshahidwandar/256d9030a9a9d90d76b008c214c7101f#change-settings
+
+install sudo
+install chrome
+
+$ sudo apt install build-essential pkg-config cmake cmake-qt-gui ninja-build valgrind
+
+$ sudo apt install python3 python3-wheel python3-pip python3-venv python3-dev python3-setuptools  [Based on your versions]
+
+install git
+
+[BEFORE INSTALLATION OF DRIVERS FOLLOW THESE STEPS]
+
+sudo apt install linux-headers-$(uname -r)
+
+install nano or vim
+
+https://askubuntu.com/questions/841876/how-to-disable-nouveau-kernel-driver {Make the commands and do blacklist}
+
+then reboot
+
+cntrl+Alt+F3
+
+login with username and paSSWORD
+
+THEN RUN THE FOLLOWING COMMAND
+sudo telinit 3
+
+again login using username and password
+then run the below command
+
+sudo ubuntu-drivers install nvidia:535
+
+then type command reboot
+
+then again cntrl+Alt+F3
+
+again login 
+
+run command nvidia-smi
+
+open chrome and type cuda 12.2 downloads
+open the first link and select the options below
+
+select the options
+Linux
+x86-64
+Ubuntu
+22.04
+runfile(local)
+
+in instructions
+cntrl+Alt+F3
+login
+go to Downloads
+then run the wget command
+
+cntrl+Alt+F1 to exit
