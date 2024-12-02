@@ -61,4 +61,8 @@ login
 go to Downloads
 then run the wget command
 
-cntrl+Alt+F1 to exit
+sudo chmod a+x package name
+
+then color changes
+
+sudo bash packagename
