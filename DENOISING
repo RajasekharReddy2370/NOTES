@@ -80,9 +80,6 @@ tmux attach -t training
 NVIDIA-smi
 
 
-
-
-
 ANOTHER PROCESS FOR DOWNLOADING
 ymdp server
 describe database
@@ -91,6 +88,8 @@ pop up
 if the link is above 1 hr
 only 1 link should be give in pop up
 these are directly downloaded in the s3 bucket of AWS
+
+scp filename_*.filetype username@ipaddress destination path
 
 
 
