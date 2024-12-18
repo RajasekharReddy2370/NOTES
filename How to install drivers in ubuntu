@@ -83,3 +83,6 @@ follow this website https://developer.nvidia.com/rdp/cudnn-archive
 
 download and run it
 using sudo dpkg -i package name
+
+watch -n 1 nvidia-smi
+nvcc -v
