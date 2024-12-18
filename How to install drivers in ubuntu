@@ -44,6 +44,7 @@ then again cntrl+Alt+F3
 again login 
 
 run command nvidia-smi
+cntrl+Alt+F1 to exit
 
 open chrome and type cuda 12.2 downloads
 open the first link and select the options below
