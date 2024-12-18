@@ -68,9 +68,15 @@ then color changes
 
 sudo bash packagename
 
+ls
+
+vim .bashrc
+
 in vim
 export PATH="$PATH:/usr/local/cuda-12.2/bin"
 exportLD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-12.2/lib64"
+
+:wq
 
 then we need to install the cuDNN
 follow this website https://developer.nvidia.com/rdp/cudnn-archive
