@@ -3,9 +3,25 @@ Mysql
 install mysql workbench
 install community server
 
+
+show databases;
+create database if not exists database_name;
+use database_name;
+select database();
+
 postgres
+select datname from pg_database;
+create database database_name;
+\c database_name();
+select current_databse();
+
 
 
 
 Mongodb
-sudo mongod --dbpath=/Users/c360/data/db
+sudo mongod --dbpath=/Users/c360/data/db [To connect to the server]
+
+show dbs;
+use database_name [To create or connect]
+db;
+
