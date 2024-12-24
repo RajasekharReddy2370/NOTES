@@ -4,3 +4,8 @@ install mysql workbench
 install community server
 
 postgres
+
+
+
+Mongodb
+sudo mongod --dbpath=/Users/c360/data/db
