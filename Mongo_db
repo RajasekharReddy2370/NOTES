@@ -82,7 +82,13 @@ For INDEXING in Lists
 db.getCollection('COLLECTION_NAME').find({"maincolumn.position":value})
 
 ALL
-db.getCollection('COLLECTION_NAME').find({'vehicles' :{$all:['bikes','cars','jeeps']'}})
+db.getCollection('COLLECTION_NAME').find({'vehicles' :{$all:['bikes','cars','jeeps']}})
+
+SIZE
+db.getCollection('COLLECTION_NAME').find({'vehicles' :{$size:4}})
+
+
+
 
 
 
