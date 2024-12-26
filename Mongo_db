@@ -1,1 +1,45 @@
 
+Mongo_db is a no_sql database
+it is a document database
+flexible schems
+mongosh
+mongodb compass for query
+the port is 27017
+
+queries
+
+show dbs;
+use dbname or New dbname;
+db;
+
+Fields - columns
+Document - rows
+multiple_documents - collection   [Table]
+multiple_collections  - database
+
+
+db.createCollection('NEW_DOCUMENT_NAME');
+db.getCollection('COLLECTION_NAME')
+
+CRUD operations
+
+INSERT
+db.collection.insertOne({});
+db.collection.insertMany([{}]);
+
+UPDATE
+db.collection.find({c:v});
+db.collection.updateOne({c:v},{$set:{c:v}})
+db.collection.updateOne({c:v},{$set:{c:v}},{ upsert: true }); [IT WILL UPLOAD A NEW RECORD IF NOT FOUND]
+db.collection.updateMany({}, { $inc: { likes: 1 } })
+
+DELETE
+db.posts.deleteOne({ title: "Post Title 5" })
+db.posts.deleteMany({ title: "Post Title 5" })
+
+SEARCH
+db.posts.find( {category: "News"} )
+for include 1 for exclude 0
+db.posts.find({}, {title: 1, date: 1})   ---------[only particular columns]
+db.posts.find({}, {_id: 0, title: 1, date: 1})   ----[exclude id column]
+
