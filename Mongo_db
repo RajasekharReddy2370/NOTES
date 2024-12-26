@@ -17,11 +17,10 @@ Document - rows
 multiple_documents - collection   [Table]
 multiple_collections  - database
 
+========================================================CRUD operations========================================================
 
 db.createCollection('NEW_DOCUMENT_NAME');
 db.getCollection('COLLECTION_NAME')
-
-CRUD operations
 
 INSERT
 db.collection.insertOne({});
@@ -42,4 +41,23 @@ db.posts.find( {category: "News"} )
 for include 1 for exclude 0
 db.posts.find({}, {title: 1, date: 1})   ---------[only particular columns]
 db.posts.find({}, {_id: 0, title: 1, date: 1})   ----[exclude id column]
+
+===========================================================FILTERS============================================================
+
+db.getCollection('COLLECTION_NAME').find({c:v},{c:v})
+db.getCollection('COLLECTION_NAME').find({c:v},{c:v}).count()
+
+db.getCollection('COLLECTION_NAME').find({'color' :{"$eq":"green"})
+db.getCollection('COLLECTION_NAME').find({'color' :{"$ne":"green"})
+db.getCollection('COLLECTION_NAME').find({'age' :{"$gt": 25})
+db.getCollection('COLLECTION_NAME').find({'age' :{"$gte": 25})
+db.getCollection('COLLECTION_NAME').find({'age' :{"$lt": 25})
+db.getCollection('COLLECTION_NAME').find({'age' :{"$lte": 25})
+
+
+
+
+
+
+
 
