@@ -64,8 +64,8 @@ db.getCollection('COLLECTION_NAME').find({c:v},{c:v}).sort({c:1})
 db.getCollection('COLLECTION_NAME').find({c:v},{c:v}).sort({c:-1})
 
 IN and NOTIN
-db.getCollection('COLLECTION_NAME').find({"$in":{'name':["Raj","chen"]}})
-db.getCollection('COLLECTION_NAME').find({"$nin":{'name':["Raj","chen"]}})
+db.getCollection('COLLECTION_NAME').find({"Name":{"$in":["Raj","chen"]}})
+db.getCollection('COLLECTION_NAME').find({"Name":{"$nin":["Raj","chen"]}})
 
 
 
