@@ -47,12 +47,26 @@ db.posts.find({}, {_id: 0, title: 1, date: 1})   ----[exclude id column]
 db.getCollection('COLLECTION_NAME').find({c:v},{c:v})
 db.getCollection('COLLECTION_NAME').find({c:v},{c:v}).count()
 
-db.getCollection('COLLECTION_NAME').find({'color' :{"$eq":"green"})
-db.getCollection('COLLECTION_NAME').find({'color' :{"$ne":"green"})
-db.getCollection('COLLECTION_NAME').find({'age' :{"$gt": 25})
-db.getCollection('COLLECTION_NAME').find({'age' :{"$gte": 25})
-db.getCollection('COLLECTION_NAME').find({'age' :{"$lt": 25})
-db.getCollection('COLLECTION_NAME').find({'age' :{"$lte": 25})
+ = != > < >= <=
+db.getCollection('COLLECTION_NAME').find({'color' :{"$eq":"green"}})
+db.getCollection('COLLECTION_NAME').find({'color' :{"$ne":"green"}})
+db.getCollection('COLLECTION_NAME').find({'age' :{"$gt": 25}})
+db.getCollection('COLLECTION_NAME').find({'age' :{"$gte": 25}})
+db.getCollection('COLLECTION_NAME').find({'age' :{"$lt": 25}})
+db.getCollection('COLLECTION_NAME').find({'age' :{"$lte": 25}})
+
+
+BETWEEN
+db.getCollection('COLLECTION_NAME').find({'age' :{"$gt": 25, "$lt": 45}})
+
+SORTING for 1 Ascending_order  -1 Descending order
+db.getCollection('COLLECTION_NAME').find({c:v},{c:v}).sort({c:1})
+db.getCollection('COLLECTION_NAME').find({c:v},{c:v}).sort({c:-1})
+
+
+
+
+
 
 
 
