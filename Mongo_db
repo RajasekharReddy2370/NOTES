@@ -68,11 +68,11 @@ db.getCollection('COLLECTION_NAME').find({"Name":{"$in":["Raj","chen"]}})
 db.getCollection('COLLECTION_NAME').find({"Name":{"$nin":["Raj","chen"]}})
 
 AND
-db.getCollection('COLLECTION_NAME').find({"$and":[{"Name":"Raj"},{"Age":25}]})
+db.getCollection('COLLECTION_NAME').find({$and:[{"Name":"Raj"},{"Age":25}]})
 db.getCollection('COLLECTION_NAME').find({"Name":"Raj"},{"Age":25})
 
 OR
-db.getCollection('COLLECTION_NAME').find({"$or":[{"Name":"Raj"},{"Age":25}]})
+db.getCollection('COLLECTION_NAME').find({$or:[{"Name":"Raj"},{"Age":25}]})
 db.getCollection('COLLECTION_NAME').find({"Name":"Raj"},{"Age":25})
 
 Embedded Documents like list in list
