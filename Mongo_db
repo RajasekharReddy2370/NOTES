@@ -78,6 +78,10 @@ db.getCollection('COLLECTION_NAME').find({"Name":"Raj"},{"Age":25})
 Embedded Documents like list in list
 db.getCollection('COLLECTION_NAME').find({"maincolumn.subcolumn":value})
 
+For INDEXING in Lists
+db.getCollection('COLLECTION_NAME').find({"maincolumn.position":value})
+
+
 
 
 
