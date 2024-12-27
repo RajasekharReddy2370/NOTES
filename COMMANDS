@@ -71,6 +71,8 @@ from rest_framework.models.authtoken import Token
 from rest_framework.authentication import Tokenauthentication
 
 
+ollama run llama3.2
+
 
 
 
