@@ -1,3 +1,22 @@
+#################################################### MYSQL #####################################################
+
+install mysql workbench
+install community server
+
+show databases;
+create database if not exists database_name;
+use database_name;
+select database();
+
+################################################  POST_GRES ###################################################
+
+postgres
+select datname from pg_database;
+create database database_name;
+\c database_name();
+select current_databse();
+
+################################################# MONGO_DB #########################################################
 
 Mongo_db is a no_sql database
 it is a document database
@@ -18,9 +37,11 @@ multiple_documents - collection   [Table]
 multiple_collections  - database
 
 ========================================================CRUD operations========================================================
-
+use database_name;
+show collections;
 db.createCollection('NEW_DOCUMENT_NAME');
 db.getCollection('COLLECTION_NAME')
+
 
 INSERT
 db.collection.insertOne({});
