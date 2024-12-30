@@ -1,5 +1,5 @@
 #################################################### MYSQL #####################################################
-
+port is 3306
 install mysql workbench
 install community server
 
@@ -9,7 +9,7 @@ use database_name;
 select database();
 
 ################################################  POST_GRES ###################################################
-
+port 5432
 postgres
 select datname from pg_database;
 create database database_name;
@@ -17,13 +17,12 @@ create database database_name;
 select current_databse();
 
 ################################################# MONGO_DB #########################################################
-
+the port is 27017
 Mongo_db is a no_sql database
 it is a document database
 flexible schems
 mongosh
 mongodb compass for query
-the port is 27017
 
 queries
 
