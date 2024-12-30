@@ -21,8 +21,8 @@ the port is 27017
 Mongo_db is a no_sql database
 it is a document database
 flexible schems
-mongosh
-mongodb compass for query
+mongodb Atlas for cloud database
+mongodb compass for query and visualization
 
 queries
 
