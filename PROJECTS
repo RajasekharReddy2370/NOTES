@@ -18,14 +18,19 @@ Frontend is built with ReactJS
 connection using API's
 Database - Mysql
 
+Roles
+As a backend Developer
+
 
 AIVOICE
 
 youtube links
 denoising
 clips cutting
-genarate transcripts [extracting text from voice]
-check correct or not
-checking parameters of the voice
-training
+genarate transcripts [extracting text from voice] using Speech recognition
+check text of the particular voice is correct or not
+checking parameters of the voice(samplrate,channels,pcmformat etc)
+training (inference training)
 model
+
+RAG
