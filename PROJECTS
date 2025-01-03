@@ -18,11 +18,16 @@ Frontend is built with ReactJS
 connection using API's
 Database - Mysql
 
-Roles
-As a backend Developer
+ROLES
+API Development and Integration : 
+Develop RESTful APIs using Django REST Framework (DRF) to connect the backend with the ReactJS frontend.
+Ensure API endpoints are secure, efficient, and well-documented.
 
-
-AIVOICE
+Database Management:
+Design and manage database schemas for MySQL to store user data, voter information, polling booths, surveys, and other related data.
+Write optimized and secure SQL queries for CRUD operations.
+Handle database migrations using Django's migration system.
+#########################################################AIVOICE#######################################################################
 
 youtube links
 denoising
