@@ -1,5 +1,10 @@
 Itoconnect
 
+user
+subuser
+pollingbooth
+ward issues
+
 IToConnect is a public relations management system designed for managing voter data efficiently.
 Once the user onboarded to the application, admin of the application should be given access to the users inorder to use the services
 user also given access to create sub-users and allocate the polling booths, villages to them, so that the sub-user will only have the access to those polling booth related voters.
@@ -11,3 +16,6 @@ Backend is with python
 Frontend is built with ReactJS
 connection using API's
 Database - Mysql
+
+
+AIVOICE
