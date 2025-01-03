@@ -7,7 +7,8 @@ ward issues
 
 IToConnect is a public relations management system designed for managing voter data efficiently.
 Once the user onboarded to the application, admin of the application should be given access to the users inorder to use the services
-user also given access to create sub-users and allocate the polling booths, villages to them, so that the sub-user will only have the access to those polling booth related voters.
+user also given access to create sub-users and allocate the polling booths, villages to them, 
+so that the sub-user will only have the access to those polling booth related voters.
 Sub-users can go on the field and they will make the surveys related to ward-issues, 
 Top hierarchy users will be able to see the graphs related to favour votes and the issues reported by the sub-user.
 
