@@ -30,4 +30,7 @@ ssh username@ipaddress
 password
 
 
+To copy from one system to another system------------------------------------
+scp filename_*.filetype username@ipaddress:~/destination path
+
 
