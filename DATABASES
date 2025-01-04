@@ -8,6 +8,13 @@ create database if not exists database_name;
 use database_name;
 select database();
 
+IN TERMINAL
+sudo systemctl status mysql
+sudo mysql
+
+alter user"username"@"localhost" identified by "password";
+show databases;
+
 ################################################  POST_GRES ###################################################
 port 5432
 postgres
@@ -17,7 +24,6 @@ create database database_name;
 select current_databse();
 
 ################################################## SQLITE3 ###################################################
-
 
 folder la *.db
 
