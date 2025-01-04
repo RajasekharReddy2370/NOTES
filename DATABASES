@@ -16,6 +16,22 @@ create database database_name;
 \c database_name();
 select current_databse();
 
+################################################## SQLITE3 ###################################################
+
+
+folder la *.db
+
+sqlite3
+
+.open databsename.db
+
+.tables
+
+.mode columns
+.headers on
+PRAGMA table_info(table_name)
+select * from table_name;
+
 ################################################# MONGO_DB #########################################################
 the port is 27017
 Mongo_db is a no_sql database
