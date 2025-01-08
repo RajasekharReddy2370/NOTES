@@ -24,6 +24,8 @@ git password : TOKEN
 
  git push -u origin master
 
+
+To create a new branch and pull code to new branch
 git checkout -b newbranch
 git merge newbranch
 git push origin newbranch
