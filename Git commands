@@ -3,6 +3,8 @@ GIT_HUB COMMANDS
 
 git init
 
+git remote add origin link
+
 git clone 
 
 git add .
@@ -18,9 +20,14 @@ git password : TOKEN
 
  git remote add origin https://github.com/c360-voice/aivoice.git
  
-  git pull origin master
+ git pull origin master
 
-  git push -u origin master
+ git push -u origin master
+
+git checkout -b newbranch
+git merge newbranch
+git push origin newbranch
+
 ################################################################TOKEN GENERATION########################################################################
 
 1.Git profile
