@@ -29,6 +29,12 @@ Write optimized and secure SQL queries for CRUD operations.
 Handle database migrations using Django's migration system.
 #########################################################AIVOICE#######################################################################
 
+Developed an end-to-end automation pipeline for processing YouTube videos,
+integrating audio processing, transcription, and training workflows through a custom-built website.
+
+Engineered a module for video-to-audio conversion, denoising,
+and parallel uploading to Amazon S3 for efficient data storage and processing.
+
 youtube links
 denoising
 clips cutting
@@ -39,3 +45,6 @@ training (inference training)
 model
 
 RAG
+Developed a Retrieval-Augmented Generation (RAG) application leveraging LangChain and
+ChromaDB to enhance the accuracy and relevance of AI-generated responses.
+Integrated ChromaDB as a vector database for efficient and scalable embedding storage and retrieval in the application.
