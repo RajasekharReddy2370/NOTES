@@ -1,3 +1,3 @@
-Having differenet process of codes
-various information
-various commands
+1. Having differenet process of codes
+2. various information
+3. various commands
