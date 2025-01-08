@@ -1,4 +1,7 @@
-Itoconnect
+
+######################################################################################################################################
+                                                                Itoconnect
+######################################################################################################################################
 
 user
 subuser
@@ -27,7 +30,9 @@ Database Management:
 Design and manage database schemas for MySQL to store user data, voter information, polling booths, surveys, and other related data.
 Write optimized and secure SQL queries for CRUD operations.
 Handle database migrations using Django's migration system.
-#########################################################AIVOICE#######################################################################
+######################################################################################################################################
+                                                            AIVOICE
+#######################################################################################################################################
 
 Developed an end-to-end automation pipeline for processing YouTube videos,
 integrating audio processing, transcription, and training workflows through a custom-built website.
@@ -44,7 +49,10 @@ checking parameters of the voice(samplrate,channels,pcmformat etc)
 training (inference training)
 model
 
-RAG
+######################################################################################################################################
+                                                              RAG
+######################################################################################################################################
+
 Developed a Retrieval-Augmented Generation (RAG) application leveraging LangChain and
 ChromaDB to enhance the accuracy and relevance of AI-generated responses.
 Integrated ChromaDB as a vector database for efficient and scalable embedding storage and retrieval in the application.
