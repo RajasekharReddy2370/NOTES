@@ -34,6 +34,9 @@ Handle database migrations using Django's migration system.
                                                             AIVOICE
 #######################################################################################################################################
 
+Generate the voice of any person based on their related data such as voice
+processing the voice files 
+
 Developed an end-to-end automation pipeline for processing YouTube videos,
 integrating audio processing, transcription, and training workflows through a custom-built website.
 
