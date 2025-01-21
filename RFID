@@ -1,3 +1,45 @@
+RFID [Radio Frequency Identification] zebra fx9600
+it involves Application -> RFID Reader -> Antena -> RFID Tag
+
+
+PROCESS FLOW : 
+ When power on the RFID reader send signals to Antena The Antena emits Radio Waves
+            when the radio waves hit the RFID tag the RFID tag sends Data to RFID reader then the decode and send data to Application
+
+The data Transfring is 3 types
+Through Lan -    LLRP     Protocol
+        server - http
+        cloud -  MQTT
+
+RFID Reader
+Antena for emitting radio waves the range is upto 30 feet 800 to 900 Mhz
+[  3 to 500 Khz upto 3 feet
+   30 to 300 Mhz upto 6 feet
+  800 to 900 Mhz  upto 25 to 30 feet
+  2.45 Ghz more than 100 feet ]
+
+RFID Tag
+        The RFID tag stores the information
+        2 types of RFID Tags [Active, Passive]
+        Active => which requires battey more cost upto more than 1000 feet communication { in Vehicles tracking }
+        Passive => no battery cheaper less communication in warehouses { in Fasttag tollgate payments }
+  Parts
+        1. Antena       -> receiving Signals and sending signals
+        2. Microchip    -> stores the information or data every tag has its uniqueID EPC number Electronic Product Code
+        3. Substrate    -> the substrate joins and holds the Antena and Microchip
+
+when the tag Antena receives the radio waves from the antena the current is generated in the chip and the microchip sends the information to antena -> Readert
+
+
+
+
+
+
+
+##############################################################################################################################################
+                                                  IMPLEMENTATION
+##############################################################################################################################################
+
 connect the cable to the devices
 open laptop
 9989
