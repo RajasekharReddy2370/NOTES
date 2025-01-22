@@ -1,5 +1,5 @@
 Docker [Main platform]
-images [dependencies or libraries opr packages or environments]
+images [dependencies or libraries or packages or environments]
 container [ A live, running instance of an image, where the application runs ]
 
 raja   {image}
