@@ -26,7 +26,7 @@ application = ProtocolTypeRouter(
     }
 add the daphne library to installes apps at starting position
 
-add this to seetins file in down 
+add this to settins file in down 
 ASGI_APPLICATION = "mysite.asgi.application"
 runserver
 
