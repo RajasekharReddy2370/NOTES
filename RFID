@@ -142,13 +142,19 @@ https://zebradevs.github.io/rfid-ziotc-docs/schemas/raw_mqtt_payloads/index.html
 
 SCHEMAS
 RAW_MQTT_PAYLOADS
-in raw_mqtt_payloads there are 2 types 1. 
+in raw_mqtt_payloads there are 2 types 1. command schemas 2.response schemas
+these we should give in a publish to a topic
+then the response is visible
 
 
 
 
 
 
+
+##############################################################################################################################################
+                                          ABOUT RFID_READER
+##############################################################################################################################################
 
 
 
