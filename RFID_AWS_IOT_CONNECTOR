@@ -12,8 +12,9 @@ Create Policy and download the certificates in the local computer or system
 
 Power the RFID Reader and connect the Antena
 
-Provide the internet to the RFID 
-Check whether the internet is coming or not by confirming wget or ping the endpoint in the Connect -> Connect one device
+Provide the internet to the RFID_Reader through the Printer cable 
+Check whether the internet is coming or not by confirming wget or ping the endpoint 
+the endpoint is in the AWS AWS_IoT Page Connect -> Connect one device
 
 Access into the RFID Reader Through SSH
 
