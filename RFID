@@ -1,3 +1,157 @@
+##############################################################################################################################################
+                                                     AWS_IoT Connection
+##############################################################################################################################################
+
+Login To AWS
+
+in the services Access the AWS IOT
+
+Create single thing
+
+Create Policy and download the certificates in the local computer or system 
+
+Power the RFID Reader and connect the Antena
+
+Provide the internet to the RFID 
+Check whether the internet is coming or not by confirming wget or ping the endpoint in the Connect -> Connect one device
+
+Access into the RFID Reader Through SSH
+
+ssh rfidadm@ipaddress
+
+pwd [apps]
+
+create a folder in the RFID_READER for storing the certificates such as private key, certificate.pem.crt, CA1.
+mkdir NEWFOLDERNAME to store the certificates in RFID_READER
+Copy the certificates from the local system to the RFID_READER : 
+
+go the certificates folder in the local system in terminal
+
+Then run this command in the terminal
+
+scp ./*.pem* rfidadm@169.254.10.1:/apps/NEWFOLDERNAME/
+
+Go to the RFID UI
+
+access into the RFID
+
+click the COMMUNICATION -> Zebra IoT Connector -> Configuration -> Add Endpoint
+
+In ADD ENDPOINT 
+1. Endpoint Type : AWS IoT core
+2. END point Name : AWS
+3. END Point Description : Describe
+
+##################################
+IN CONNECTION :
+##################################
+1. Device Endpoint : In AWS iOT CONNECT -> DOMAIN CONFIGURATIONS ->Domain Name is the endpoint
+2. Port : 8883
+3. Client id : the name of the project or some random name {it should not be same as the MQTT client id}
+4. Debug : True {tick}
+
+##################################
+IN TOPICS : 
+##################################
+"Management Events: 
+               topic: asynevents [in box]
+                qos: 0,
+                retain: true,
+Tag Data Events: 
+                topic: events [in box]
+                qos: 0,
+                retain: true,
+Management: 
+                command: 
+                    qos: 0,
+                    retain: true,
+                    topic: commands [in box]
+               
+                response: 
+                    qos: 0,
+                    retain: true,
+                    topic: responses [in box]
+Control: 
+                command: 
+                    qos: 0,
+                    retain: true,
+                    topic: commands [in box]
+                },
+                response: 
+                    qos: 0,
+                    retain: true,
+                    topic: responses [in box]
+                }
+
+##################################
+IN Certificates : 
+##################################
+USE INSTALLED CERTS [No tick]
+1. Certificate Path : /apps/folder/certificate.pem.crt file name
+2. Private  Key Path : /apps/folder/private key file name
+
+USE CA certs from store CERTS [No tick]
+1. CA Certificate Path : /apps/folder/CA1 File
+2. Cert Algorithm: RS256
+3. Cert Format PEM
+
+Verify server certificate [tick]
+Verify Host Name [No tick]
+
+Click Update
+
+##################################
+INTERFACE CONFIGURATION : 
+##################################
+
+1. Management Interface : AWS
+2. Control Interface : AWS
+3. Tag Data Interface 1 : AWS
+4. Tag Data Interface 2 : None
+5. Management Events Interface : AWS
+
+Click UPDATE
+
+REFRESH and CHECK WHETHER THE ENDPOINT IS ADDED OR NOT
+
+##################################
+GO TO CONNECTIONS IN THE MAIN BAR
+##################################
+Click Connect
+1. Management Interface : connected
+2. Control Interface : connected
+3. Tag Data Interface 1 : connected
+4. Tag Data Interface 2 : None
+5. Management Events Interface : connected
+
+Go to the AWS IoT 
+in Main Bar click the MQTT TEST CLIENT
+SUBSCRIBE TO A TOPIC
+Add the Following  topics : [ These are from the in TOPICS section 
+asynevents
+commands
+responses
+events
+
+in Publish to a topic 
+tpic name type commands
+in Message Payloads we need to send payloads those are below
+
+https://zebradevs.github.io/rfid-ziotc-docs/about/index.html
+https://zebradevs.github.io/rfid-ziotc-docs/schemas/raw_mqtt_payloads/index.html
+
+SCHEMAS
+RAW_MQTT_PAYLOADS
+in raw_mqtt_payloads there are 2 types 1. 
+
+
+
+
+
+
+
+
+
 RFID [Radio Frequency Identification] zebra fx9600
 it involves Application -> RFID Reader -> Antena -> RFID Tag
 
