@@ -34,6 +34,8 @@ go the certificates folder in the local system in terminal
 
 Then run this command in the terminal
 
+send 3 certificates private key , certificate.pem, Amazon CA1
+
 scp ./*.pem* rfidadm@169.254.10.1:/apps/NEWFOLDERNAME/
 
 Go to the RFID UI
