@@ -81,7 +81,22 @@ git stash
 git pull origin master [to get the updated code in the middle of the day]
 
 [evn 8] git push branchname
- 
+
+********************************************************************************************************************************
+********************************************************************************************************************************
+********************************************************************************************************************************
+go to folder 
+git init
+git remote add origin github link [https://github.com/abhilash-eshipjet/Qbit.git]
+git remote set-url origin https://TOKEN@github.com/abhilash-eshipjet/Qbit.git [Replace token with your token]
+git remote -v
+git fetch origin
+git branch
+git pull original main
+git branch
+ls
+
+
 
 
 
