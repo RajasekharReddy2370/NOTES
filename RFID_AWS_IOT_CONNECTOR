@@ -8,6 +8,8 @@ change the region in rightside top corner
 
 in the services Access the AWS IOT
 
+MANAGE BAR -> All devices -> Things
+
 Create single thing
 
 Create Policy and download the certificates in the local computer or system 
