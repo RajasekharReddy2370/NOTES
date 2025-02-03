@@ -1,3 +1,8 @@
+✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️
+                                    AWS-Connect with Python and Accesss the s3
+✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️
+
+
 https://www.youtube.com/watch?v=JKlOlDFwsao
 
 import boto3
@@ -53,7 +58,7 @@ print(foo)
 
 create a table in AWS dynamodb
 
-CREATING LAMBDA FUNCTION TO RETRIWE DATA FROM DYNAMODB
+CREATING LAMBDA FUNCTION TO CREATE DATA TO DYNAMODB
 
 import json
 import boto3
@@ -69,7 +74,9 @@ def lambda_handler(event,context):
 
 click on test button write the event name and json you want and click on deploy
 
-click on test the answer will appear
+The json fields should be the columns of the table created
+
+click on test the answer will appear and check also in dynamo db
 
 
 
