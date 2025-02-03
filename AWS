@@ -60,6 +60,9 @@ create a table in AWS dynamodb
 
 CREATING LAMBDA FUNCTION TO CREATE DATA TO DYNAMODB
 
+
+CREATING_OR_INSERTING_DATA : ========>
+
 import json
 import boto3
 dynamodb_client = boto3.resource('dynamodb')
@@ -78,5 +81,22 @@ The json fields should be the columns of the table created
 
 click on test the answer will appear and check also in dynamo db
 
+READING_DATA FROM DYNAMO_DB : ==========>
+
+import json
+import boto3
+dynamodb_client = boto3.resource('dynamodb')
+def lambda_handler(event,context):
+  data = dynamodb_client.scan(TableName = 'DBTABLENAME')
+
+  response = {
+      'statuscode':200,
+      'body':json.dumps(data),
+      'headers':{
+            'Content-Type':'application/json',
+            'Access-Contron-Allow-Origin':'*'
+            },
+      }
+  return response
 
 
