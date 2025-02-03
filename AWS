@@ -87,6 +87,12 @@ in search bar enter the Role name before crteated
 click on create function
 
 
+Insert Items : Use table.put_item()
+Read Items: Use table.get_item()
+Update Items: Use table.update_item()
+Delete Items: Use table.delete_item()
+
+
 CREATING LAMBDA FUNCTION TO CREATE DATA TO DYNAMODB
 
 CREATING_OR_INSERTING_DATA : ========>
