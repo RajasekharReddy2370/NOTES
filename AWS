@@ -46,5 +46,30 @@ foo = pd.read_csv(obj['Body'], index_col = 0)
 print(type(foo))
 
 print(foo)
+✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️
+                                                AWS-CONSOLE
+✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️
+
+
+create a table in AWS dynamodb
+
+CREATING LAMBDA FUNCTION TO RETRIWE DATA FROM DYNAMODB
+
+import json
+import boto3
+dynamodb_client = boto3.resource('dynamodb')
+table = dynamodb_client.Table('TABLE_NAME')
+
+def lambda_handler(event,context):
+      try:
+            response = table.put_item(Item=event)
+            return table.scan()
+      except:
+            raise
+
+click on test button write the event name and json you want and click on deploy
+
+click on test the answer will appear
+
 
 
