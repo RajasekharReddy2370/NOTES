@@ -91,6 +91,35 @@ CREATING LAMBDA FUNCTION TO CREATE DATA TO DYNAMODB
 
 CREATING_OR_INSERTING_DATA : ========>
 
+import boto3
+import json
+import uuid
+
+# Initialize DynamoDB client
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('YourTableName')  # Replace with your table name
+
+def lambda_handler(event, context):
+    # Generate a unique ID
+    item_id = str(uuid.uuid4())
+
+    # Sample item to insert
+    item = {
+        'id': item_id,
+        'name': event['name'],  # Extract from event input
+        'age': event.get('age', 0)  # Default value if age is not provided
+    }
+
+    # Insert into DynamoDB
+    table.put_item(Item=item)
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps({'message': 'Item added successfully!', 'item': item})
+    }
+
+
+IN CONSOLE 
 
 import json
 import boto3
