@@ -57,6 +57,35 @@ print(foo)
 
 
 create a table in AWS dynamodb
+create table Tablename
+enter partition Key
+enter sort key
+click defaut settings
+click create table
+
+click on table name
+click on explore items
+click on create item
+enter the values 
+click on create item
+
+GO to AWS IAM
+in Access Management click on Roles
+click on create Role in blue box
+click on lambda --> Next bluebox
+enter dynamodb in search bar
+click on Amazon dynamodb full access --> Next bluebox
+on Role name enter lambda-dynamodb-full-access
+click on create Role
+go to lambda services in AWS
+click on create function
+enter function name
+change programming language 
+click on change default execution role
+click on Use an existing role
+in search bar enter the Role name before crteated
+click on create function
+
 
 CREATING LAMBDA FUNCTION TO CREATE DATA TO DYNAMODB
 
