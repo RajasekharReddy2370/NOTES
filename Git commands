@@ -87,6 +87,7 @@ git pull origin master [to get the updated code in the middle of the day]
 ********************************************************************************************************************************
 go to folder 
 git init
+git clone https://TOKEN@github.com/Eshipjet-India-Pvt-Ltd/copilotapi.git
 git remote add origin github link [https://github.com/abhilash-eshipjet/Qbit.git]
 git remote set-url origin https://TOKEN@github.com/abhilash-eshipjet/Qbit.git [Replace token with your token]
 git remote -v
