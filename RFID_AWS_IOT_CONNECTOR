@@ -154,6 +154,31 @@ these we should give in a publish to a topic
 then the response is visible
 
 
+##############################################################################################################################################
+                                                     AWS_LAMBDA HTTP POST in Reader
+##############################################################################################################################################
+Reader ui
+add endpoint as HTTP POST
+Tag data interface1
+Management Events Interface
+local rest management tick
+Local rest control  tick
+
+Go to AWS
+create a lambda function add print statement under the def line print(event)
+create API for this function
+Go to API GATEWAY in AWS services
+click create API button
+on HTTP API  click bulid button
+click ADD integration -> in drop down select lambda
+in search bar select the lambda function which is created
+create a API name click next ->
+select which method or put ANY
+select the resource path as API endpoint create the ENDPOINT NAME
+select the integration target as lambda function
+click NEXT -> select stage name as dev click -> create
+in the nav bar click -> click on API:APINAME
+copy the invokeurl or go to lambda finction click on the  API Gateway copy the url
 
 
 
