@@ -1,0 +1,19 @@
+on right side upper beside the play button click the name
+in the drop down edit configurations
+write name
+in run in below search bar
+1st box select the virtual environment path
+in 2nd box manage.py
+in 3rd box runserver
+
+click ok
+
+if you keep red dot on a 5th line 
+then the code will stop at the 4th line the 5 th line will not execute
+if you hit in post man or run the server
+in down page you got 4 symbols
+next line, into the function, out of the function 
+
+
+
+
