@@ -48,6 +48,27 @@ Handle database migrations using Django's migration system.
                                                             SHIPPER-COPILOT
 #######################################################################################################################################
 
+Overview : 
+This application is built on python django framework. Where we have made a REST API which recieves the payload from the shippercopilot application. 
+The payload consists of different parameters including : 
+    question : this is the question asked by the user in the chatbot UI.
+    X-Token : which is used to consume node API's with which we make the shipments.
+    node_endpoint : this is the micro-service endpoint.
+    carrier_endpoint : this is the micro-service to send the order to the carriers.
+    location_id : this is the user ID with which we filter the details for the user question.
+    environment : this is the environment from where the API is consumed (dev, demo)
+
+In the API we consume openAI API to get the user intent. Here we have used the agentic approach where each agent is responsible for making decision based on the prompt given to it. We have three agents. 
+    Agent 1 : The agent analyzes the language and context of your query to identify whether it’s a GET or POST request, streamlining your interactions
+    Agent 2 : When you ask a question about retrieving data (like querying a database for specific information), the agent identifies it as a GET request and generates the appropriate SQL query for you (in the prompt we give the schema of the tables we needed.)
+    Agent 3 : The agent extracts relevant details from user question and creates a precise JSON object that contains - person name, company name, product name, carrier name
+
+    If the question is related to GET then we create the sql query for it and send back the query in the response.
+    If the question is related to POST then we connect to the postgres database and get the address details, product details, 
+user location (from address), carrier details. If user question doesn't have key related to the carrier then default carrier is picked.
+We also ensure if the shipment is internationl, in this case we only query the international carrier services only and choose one randomly. 
+If address or product are in multiple then we send back all the formated details back in the response where user will select one and send back the payload to another API. 
+For all success response we have added 'type' keyword where it defines the response object type (MULTIPLE, LABLE, SQL, SHIP)
 
 
 
