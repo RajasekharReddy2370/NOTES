@@ -93,6 +93,16 @@ ls
 
 
 
+git add .
+git commit -m "description"
+git pull origin main
+git push origin Raja_features
+
+git switch branchname   [only to switches other branch no updated code will not come]
+After this
+git fetch [All the branches have their updated code]
+git pull origin branchname
+
 
 
 
