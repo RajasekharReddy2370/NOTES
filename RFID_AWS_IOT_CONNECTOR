@@ -10,9 +10,42 @@ in the services Access the AWS IOT
 
 MANAGE BAR -> All devices -> Things
 
+in AWS_IOT --> Security --> Policies --> create policy and paste the json
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iot:Publish",
+                "iot:Receive",
+                "iot:Republish"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iot:Subscribe"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iot:Connect"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+createpolicy
+MANAGE --> All devices --> Things
 Create single thing
 
-Next --> 1st option Next (Auto Generate a new certificate) click create thing
+Next --> 1st option Next (Auto Generate a new certificate) --> select policy --> click create thing
 
 Create Policy and download the certificates in the local computer or system 
 
