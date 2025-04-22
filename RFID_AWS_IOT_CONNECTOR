@@ -285,7 +285,16 @@ open the python RFID
 Activate the environment ./venv/calls/Scripts/activate this will activate the environment
                                            
 cd Rfid(Projectfolder NAME)
-                                           
+Create a excel file with these columns such as below
+
+rfid	po_number	date_time	reader_id	antenna_id	read_count	location_id	reader_location	sku	product_name	lot_number	serial_no	quantity	order_id	shipment_id	destination	carrier_name	tracking_number	tag_sercurity_code	tag_status	tag_type	frequency	signal_strength	event_type	user_id	tag_signal_strength	status_indicator
+a27012022112233445501455	1678393865	9/6/2024 18:14	RDR1002	ANT02	2	ZONEB2	Warehouse Entry	SKU-101	Ray-Ban Wayfarer	BATCH-202401	SN-Prod1	9	ORD-78901	SHIP-1201	New York, USA	FedEx	279091128890	SEC-001	Active	Passive	UHF	Strong	Scan	USER001	Strong	Success
+a27012022112233445501456	1678393865	9/6/2024 17:59	RDR1003	ANT03	4	ZONEB2	Packaging Area	SKU-101	Ray-Ban Wayfarer	BATCH-202402	SN-Prod2	9	ORD-78902	SHIP-1202	London, UK	DHL Express	TRK-000002	SEC-002	Inactive	Active	HF	Medium	Movement	USER002	Medium	Failed
+
+Hit the insert API in postman upload the excel file in the API
+
+The Response should be True
+
 daphne -p 8001 RfidScanner.asgi:application
 
 open the vscode                                           
@@ -297,9 +306,13 @@ click the startbutton
 it establishes the connection between frontend and backend 
 and it also establishes the connection between the RFID
 
+Place the tags near the antenna [The tags are exactly from the excel file]
 The RFID continuously pushes the data from the barcodes to the backend the backend pushes the data to frontend
 tag list it will show the unique tags
 tag count or tag scan it will show how many times the tags are scanned
+
+In the front end it will also show the tag data
+
 to disconnect
 open the python add another terminal
 remove the first terminal
