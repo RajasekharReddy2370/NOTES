@@ -8,9 +8,22 @@ Self Introduction:
 ######################################################################################################################################
 
 1. WHY DO YOU WANT TO CHANGE YOUR COMPANY?
+    I am looking for new opportunities to further expand my skills and work on more challenging and innovative projects. While I have gained valuable experience in my current role, 
+    I believe that moving to a new company will provide me with the opportunity to work with different technologies, enhance my problem-solving abilities, and contribute to impactful projects. 
+    I'm excited about the possibility of growing professionally in a dynamic environment and collaborating with talented teams.
+
+    I’m looking for new opportunities to grow my skills and take on more challenging projects. While I’ve learned a lot in my current role, 
+    I believe joining a new company will give me the chance to work with different technologies, improve my problem-solving skills, and contribute to meaningful projects. 
+    I’m excited to grow professionally and work with a talented team.
+
 2. WHAT IS YOUR NOTICE PERIOD?
-3. IF HE NEEDS IMMEDIATE JOINER?
+    As per the company's policy, the standard notice period is 45 days; however, I am open to negotiating with management once the offer is confirmed.
+
+3. IF HE NEEDS IMMEDIATE JOINER how to manage?
+
 4. WHAT ARE THE PROJECTS U WORKED ON?
+
+
 ######################################################################################################################################
                                                                 Itoconnect
 ######################################################################################################################################
@@ -78,10 +91,6 @@ user location (from address), carrier details. If user question doesn't have key
 We also ensure if the shipment is internationl, in this case we only query the international carrier services only and choose one randomly. 
 If address or product are in multiple then we send back all the formated details back in the response where user will select one and send back the payload to another API. 
 For all success response we have added 'type' keyword where it defines the response object type (MULTIPLE, LABLE, SQL, SHIP)
-
-
-
-
 
 
 ######################################################################################################################################
