@@ -1,7 +1,10 @@
 AWS
 Amazon_Web_services
 
-Login
+In project folder if there is any dist folder delete otherwise npm run build dist folder is created after running the command
+
+
+Login to AWS
 
 in services search S3
 create bucket
@@ -10,19 +13,22 @@ general purpose
 Bucket name
 
 remove tick on block all public access
+tick the Acknowledge box
 
 then click on create bucket 
 
-bucket is creates
+bucket is created
 
-go to properties enable
+go to properties
+in properties in static website hosting change disable to enable
 index.html
 index.html
 save
 
-then upload the files
+then in objects
 
 then permissions
+In bucket policy change the bucket code line to bucket name
 enable
 
  
