@@ -31,7 +31,12 @@ then permissions
 In bucket policy change the bucket code line to bucket name
 enable
 
- 
+ then click upload option in bucket
+Go to project folder
+dist
+click browser
+copy all files and drag
+
 
 
 
