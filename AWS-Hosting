@@ -1,7 +1,7 @@
 AWS
 Amazon_Web_services
 
-In project folder if there is any dist folder delete otherwise npm run build dist folder is created after running the command
+In project folder if there is any dist folder delete otherwise {npm run build} dist folder is created after running the command
 
 
 Login to AWS
