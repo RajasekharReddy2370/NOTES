@@ -37,6 +37,13 @@ dist
 click browser
 copy all files and drag
 
+copy the url generated in the s3 bucket
+generate the ip address based on the url (convert the url to ipaddress)
+
+go to hostinger in vps there is domain name click on manage
+add the domain name and click on add record
+
+
 
 
 
