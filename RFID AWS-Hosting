@@ -55,9 +55,11 @@ in AWS s3 the bucket name is dev-rfid.shippercopilot.space
 in hostinger the addrecord name should be dev-rfid
 
 
+For deploying the updated code 
+delete the files in the s3 bucket first
+then delete the previous dist folder in project folder
+then genarate the new dist folder
 
-
-
-
-
-
+the in s3 bucket click on upload
+in dist folder select all the files(using control+A)
+then click on upload.
