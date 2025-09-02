@@ -104,6 +104,26 @@ git fetch [All the branches have their updated code]
 git pull origin branchname [same branch name]
 
 
+********************************************************************************************************************************
+********************************************************************************************************************************
+********************************************************************************************************************************
+
+To change git credentials in global
+git config --global user.name "username"
+git config --global user.email "email"
+
+git config user.name "username"
+git config user.email "email"
+
+git init
+git remote add origin ssh link in git hub
+git remote set-url origin httplink or ssh link
+git push -u origin branch name (only one branch)
+git push --all origin (all branches will go to git hub)
+
+
+
+
 
 
 
