@@ -118,6 +118,9 @@ git config user.email "email"
 git init
 git remote add origin ssh link in git hub
 git remote set-url origin httplink or ssh link
+git add .
+git commit -m "initial commit"
+git branch _M main
 git push -u origin branch name (only one branch)
 git push --all origin (all branches will go to git hub)
 
