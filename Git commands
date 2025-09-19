@@ -116,8 +116,10 @@ git config user.name "username"
 git config user.email "email"
 
 git init
-git remote add origin ssh link in git hub
-git remote set-url origin httplink or ssh link
+git remote add origin ssh link in git hub [c360@MacBook-Pro RFID_Nexus-Mobile-code % git remote add origin https://TOKEN@github.com/Eshipjet-India-Pvt-Ltd/RFID-NATIVE-ANDROID.git    
+] Add token 
+git remote set-url origin httplink or ssh link [c360@MacBook-Pro RFID_Nexus-Mobile-code % git remote set-url origin https://TOKEN@github.com/Eshipjet-India-Pvt-Ltd/RFID-NATIVE-ANDROID.git
+Add token here also
 git add .
 git commit -m "initial commit"
 git branch _M main
