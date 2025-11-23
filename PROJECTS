@@ -73,7 +73,14 @@ Handle database migrations using Django's migration system.
                                                             RFID
 #######################################################################################################################################
 
+I worked as a backend developer on an RFID-based inventory tracking system. I developed the backend using Django and Django REST Framework. 
+In the system, RFID readers scanned nearby tags and published the tag data to an MQTT broker. Our backend subscribed to these MQTT topics, 
+processed the incoming tag IDs, mapped them to registered products, and updated their status and location in real time. 
+The frontend consumed REST APIs from our backend to display live tracking of inventory.
 
+I was responsible for designing the database models, creating REST APIs for item and tag management, 
+implementing Start/Stop commands for controlling the RFID readers, and handling authentication and permissions. 
+I also optimized database operations and message handling to improve the overall scanning performance and reduce duplicate reads
 
 
 
