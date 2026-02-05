@@ -140,3 +140,140 @@ model
 Developed a Retrieval-Augmented Generation (RAG) application leveraging LangChain and
 ChromaDB to enhance the accuracy and relevance of AI-generated responses.
 Integrated ChromaDB as a vector database for efficient and scalable embedding storage and retrieval in the application.
+
+
+######################################################################################################################################
+                                                              PREP
+######################################################################################################################################
+
+
+1️⃣ Explain about yourself
+
+I am a Python Developer with around 1 year and 10 months of experience in building backend applications and data-driven solutions.
+I have worked extensively with Python, Django, Flask, and Django REST Framework to develop RESTful APIs for SaaS, logistics, and AI-based applications.
+Along with backend development, I also have strong exposure to data analysis using Pandas, SQL, Advanced Excel, and data visualization tools like Tableau and Power BI.
+My focus has always been on writing clean, scalable code, automating manual processes, and converting raw data into meaningful insights.
+
+2️⃣ Explain the work you do and your role
+
+My role mainly involves backend development, data handling, and API integration.
+I design and develop REST APIs using Django REST Framework, handle database operations using MySQL and PostgreSQL, and manage authentication, permissions, and user roles.
+I also work on data cleaning, analysis, automation of reports, and dashboard creation.
+In some projects, I handled asynchronous tasks and performance improvements, ensuring smooth and secure application flow.
+
+3️⃣ What have you done in Python?
+
+Using Python, I have:
+
+Built RESTful APIs using Django and Flask
+
+Cleaned and processed large datasets using Pandas and NumPy
+
+Automated reporting tasks to reduce manual effort
+
+Implemented user authentication, role management, and permissions
+
+Integrated databases using SQL and ORM
+
+Worked with IoT data and real-time message handling using MQTT
+
+Handled asynchronous processing for background tasks
+
+Overall, Python has been my primary tool for backend development, data processing, and automation.
+
+4️⃣ Why did you use Tableau?
+
+I used Tableau mainly for data visualization and storytelling.
+While Python and SQL handle data processing, Tableau helps convert processed data into visual insights that are easy for non-technical stakeholders to understand.
+It allows faster analysis, interactive dashboards, and better decision-making compared to static reports.
+
+5️⃣ What type of reports did you generate?
+
+I generated:
+
+Operational reports (daily, weekly, monthly performance)
+
+Business summary reports
+
+Trend analysis reports
+
+Data quality and validation reports
+
+KPI-based dashboards
+
+Automation-based reports where data refresh happens automatically
+
+6️⃣ What type of graphs did you use?
+
+Based on the requirement, I used:
+
+Bar charts for comparison
+
+Line charts for trends over time
+
+Pie charts for percentage distribution
+
+Heat maps for intensity and performance
+
+Tables with filters for detailed analysis
+
+Combined charts for KPI dashboards
+
+7️⃣ What type of dashboards did you create?
+
+I created:
+
+Management dashboards showing KPIs
+
+Performance dashboards with trends and comparisons
+
+Operational dashboards for daily tracking
+
+Interactive dashboards with filters, drill-downs, and date selection
+These dashboards helped stakeholders track performance in real time.
+
+8️⃣ Explain the projects you mentioned
+🔹 ITOCONNECT
+
+This is a SaaS application where I developed backend APIs using Django REST Framework.
+I worked on user roles, sub-user access, permission handling, and custom authentication.
+The system was designed as a secure multi-tenant application with scalable models and middleware support.
+
+🔹 AI-VOICE
+
+This project involved building REST APIs for a Text-to-Speech system.
+Users could train voice models and perform audio inference.
+I worked on API development, tracking training progress using dynamic templates, and improving backend performance while handling asynchronous processing.
+
+🔹 SHIPPER COPILOT
+
+This is a logistics platform based on RFID and IoT.
+I developed APIs for product tracking and logistics data.
+Used MQTT protocol to track real-time product movement and encoded RFID tags based on GS1 standards to maintain uniqueness and global compatibility.
+
+9️⃣ What achievements did you make?
+
+Some of my key achievements include:
+
+Automated data analysis and reporting, reducing manual effort significantly
+
+Improved backend performance in API-heavy applications
+
+Successfully implemented role-based access control in SaaS systems
+
+Delivered real-time tracking solutions using IoT and RFID
+
+Converted complex raw data into meaningful dashboards used by management
+
+🔟 What issues did you face and how did you solve them?
+
+I faced issues such as:
+
+Handling large datasets efficiently → solved using optimized Pandas operations and SQL queries
+
+API performance bottlenecks → resolved using better query optimization and async processing
+
+Authentication and permission complexity → solved by customizing Django User model and middleware
+
+Real-time data handling challenges → addressed using MQTT and structured data pipelines
+Each issue helped me improve debugging skills, performance tuning, and system design understanding.
