@@ -1,0 +1,146 @@
+models.py
+
+pip install flask-migrate flask_sqlalchemy
+
+models:
+
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
+
+class user(db.Model):
+    fields
+
+ migrtions
+flask db init
+flask db migrate -m "description"
+flask db upgrade
+
+flask --app app.py run debug = True
+
+----------------------------------------------------------------------------------------------------------------
+
+Flask 
+Architecture :- 
+flask_project/
+│
+├── app.py
+  |-----config.py
+|-------requirements.txt
+│
+├── routes/
+│   ├── user_routes.py
+│   ├── auth_routes.py
+│   └── company_routes.py
+│
+├── services/
+│   ├── user_service.py
+│   └── auth_service.py
+│
+├── models/
+│   ├── user.py
+│   └── product.py
+│
+└── database.py
+
+Flask  db migrations :-
+flask db init
+flask db migrate -m "matter"
+flask db upgrade
+
+For running server:
+flask run
+
+WORKFLOW :-
+
+--------------------------------------- app.py -----------------------------------from flask import Flask
+
+from routes.users import user_bp
+from routes.company import company_bp
+
+app = Flask(__name__)
+
+app.register_blueprint(user_bp, url_prefix="/u")
+app.register_blueprint(company_bp, url_prefix="/c")
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+--------------------------------------- user_routes.py ---------------------------from flask import Blueprint
+
+user_bp = Blueprint("user", __name__)
+
+@user_bp.route("/users", methods=["GET"])
+def get_users():
+    return {"message": "All Users"}
+
+@user_bp.route("/users", methods=["POST"])
+def create_user():
+    return {"message": "User Created"}
+
+-------------------------------------- company_routes.py ------------------------
+from flask import Blueprint
+
+company_bp = Blueprint("company", __name__)
+
+@company_bp.route("/companies", methods=["GET"])
+def get_companies():
+    return {"message": "All Companies"}
+
+@company_bp.route("/companies", methods=["POST"])
+def create_company():
+    return {"message": "Company Created"}
+
+
+FASTAPI -------------------------------------------------------------------------
+fastapi_project/
+│
+├── main.py
+│
+└── routers/
+    ├── users.py
+    └── company.py
+
+---------------------------------------MAIN.py ----------------------------------
+
+from fastapi import FastAPI
+
+from routers.users import router as user_router
+from routers.company import router as company_router
+
+app = FastAPI()
+
+app.include_router(user_router, prefix="/users", tags=["Users"])
+app.include_router(company_router, prefix="/companies", tags=["Companies"])
+
+
+--------------------------------------- Users.py ---------------------------------
+from fastapi import APIRouter
+
+router = APIRouter()
+
+@router.get("/")
+def get_users():
+    return {"message": "All Users"}
+
+@router.post("/")
+def create_user():
+    return {"message": "User Created"}
+
+-------------------------------------- company.py ------------------------------
+from fastapi import APIRouter
+
+router = APIRouter()
+
+@router.get("/")
+def get_companies():
+    return {"message": "All Companies"}
+
+@router.post("/")
+def create_company():
+    return {"message": "Company Created"}
+
+
+
+
+
