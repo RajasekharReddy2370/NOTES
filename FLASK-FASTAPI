@@ -53,7 +53,8 @@ flask run
 
 WORKFLOW :-
 
---------------------------------------- app.py -----------------------------------from flask import Flask
+--------------------------------------- app.py -----------------------------------
+from flask import Flask
 
 from routes.users import user_bp
 from routes.company import company_bp
@@ -66,7 +67,8 @@ app.register_blueprint(company_bp, url_prefix="/c")
 if __name__ == "__main__":
     app.run(debug=True)
 
---------------------------------------- user_routes.py ---------------------------from flask import Blueprint
+--------------------------------------- user_routes.py ---------------------------
+from flask import Blueprint
 
 user_bp = Blueprint("user", __name__)
 
