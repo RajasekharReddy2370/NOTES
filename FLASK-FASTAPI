@@ -143,6 +143,7 @@ def create_company():
     return {"message": "Company Created"}
 
 
-
+alembic revision --autogenerate -m "Create User Table"    --- [make migrations]
+alembic upgrade head   --- [migrate]
 
 
