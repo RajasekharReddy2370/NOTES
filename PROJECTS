@@ -141,6 +141,14 @@ Developed a Retrieval-Augmented Generation (RAG) application leveraging LangChai
 ChromaDB to enhance the accuracy and relevance of AI-generated responses.
 Integrated ChromaDB as a vector database for efficient and scalable embedding storage and retrieval in the application.
 
+######################################################################################################################################
+                                                      AI Based Audit Ledger Automation
+######################################################################################################################################
+
+The application pulls financial transaction data from third-party REST APIs, executes a custom rule engine to detect and classify out-of-balance entries 
+(Given Amount vs. Spent Amount), and leverages the OpenAI API to generate intelligent audit insights. Finally, it automatically builds formatted Excel audit workbooks,
+replacing hours of manual reconciliation."
+
 
 ######################################################################################################################################
                                                               PREP
